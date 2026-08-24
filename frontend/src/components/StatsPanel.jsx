@@ -16,19 +16,19 @@ function StatsPanel({ stats, onRefresh }) {
       <dl className="metric-list">
         <div className="metric">
           <dt>logs</dt>
-          <dd>{overall.totalLogs.toLocaleString()}</dd>
+          <dd>{(overall?.totalLogs ?? 0).toLocaleString()}</dd>
         </div>
         <div className="metric is-flag">
           <dt>flagged</dt>
-          <dd>{overall.totalFlags.toLocaleString()}</dd>
+          <dd>{(overall?.totalFlags ?? 0).toLocaleString()}</dd>
         </div>
         <div className="metric">
           <dt>sources</dt>
-          <dd>{overall.uniqueSources}</dd>
+          <dd>{overall?.uniqueSources ?? 0}</dd>
         </div>
         <div className="metric">
           <dt>events</dt>
-          <dd>{overall.uniqueEventTypes}</dd>
+          <dd>{overall?.uniqueEventTypes ?? 0}</dd>
         </div>
       </dl>
 

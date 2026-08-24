@@ -36,9 +36,10 @@ function LogList({ onLogClick, selectedId }) {
         ...(source && { source }),
         flaggedOnly,
       })
-      setLogs(data.logs)
-      setTotalPages(data.totalPages)
-      setTotal(data.total)
+      const logsArray = Array.isArray(data?.logs) ? data.logs : (Array.isArray(data) ? data : []);
+      setLogs(logsArray)
+      setTotalPages(data?.totalPages || 1)
+      setTotal(data?.total ?? logsArray.length)
       setError(null)
       console.log(`✅ Loaded ${data.logs.length} logs (page ${page}, total ${data.total})`)
     } catch (err) {

@@ -12,13 +12,15 @@
 import { useEffect, useRef, useState, useCallback } from 'react'
 import { io } from 'socket.io-client'
 
-function getWsUrl() {
-  let url = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+const getWsUrl = () => {
+  let url = import.meta.env.VITE_API_URL || (typeof window !== 'undefined' && window.location.hostname === 'localhost' ? 'http://localhost:3000' : '');
+  if (!url) return 'http://localhost:3000';
+  url = url.trim();
   if (!url.startsWith('http://') && !url.startsWith('https://')) {
     url = `https://${url}`;
   }
   return url.replace(/\/api\/?$/, '');
-}
+};
 
 const WS_URL = getWsUrl();
 
