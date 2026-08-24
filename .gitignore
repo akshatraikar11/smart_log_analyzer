@@ -47,6 +47,6 @@ coverage/
 temp/
 tmp/
 
-# Database dumps
-*.sql
+# Database dumps (except schema definitions in database/)
 *.dump
+!database/*.sql
