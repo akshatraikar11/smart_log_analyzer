@@ -13,8 +13,12 @@ import { useEffect, useRef, useState, useCallback } from 'react'
 import { io } from 'socket.io-client'
 
 const getWsUrl = () => {
-  let url = import.meta.env.VITE_API_URL || (typeof window !== 'undefined' && window.location.hostname === 'localhost' ? 'http://localhost:3000' : '');
-  if (!url) return 'http://localhost:3000';
+  let url = import.meta.env.VITE_API_URL;
+  if (!url) {
+    return typeof window !== 'undefined' && window.location.hostname === 'localhost'
+      ? 'http://localhost:3000'
+      : 'https://smart-log-analyzer-backend.onrender.com';
+  }
   url = url.trim();
   if (!url.startsWith('http://') && !url.startsWith('https://')) {
     url = `https://${url}`;

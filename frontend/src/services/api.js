@@ -5,7 +5,11 @@
 import axios from 'axios';
 
 const normalizeUrl = (url) => {
-    if (!url) return 'http://localhost:3000/api';
+    if (!url) {
+        return typeof window !== 'undefined' && window.location.hostname === 'localhost'
+            ? 'http://localhost:3000/api'
+            : 'https://smart-log-analyzer-backend.onrender.com/api';
+    }
     let formatted = url.trim();
     if (!formatted.startsWith('http://') && !formatted.startsWith('https://')) {
         formatted = `https://${formatted}`;
@@ -16,7 +20,7 @@ const normalizeUrl = (url) => {
     return formatted;
 };
 
-const API_BASE_URL = normalizeUrl(import.meta.env.VITE_API_URL || (typeof window !== 'undefined' && window.location.hostname === 'localhost' ? 'http://localhost:3000/api' : ''));
+const API_BASE_URL = normalizeUrl(import.meta.env.VITE_API_URL);
 
 const api = axios.create({
     baseURL: API_BASE_URL,
