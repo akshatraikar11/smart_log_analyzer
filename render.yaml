@@ -22,10 +22,8 @@ services:
         value: llama-3.3-70b-versatile
 
   # Frontend React (Vite) Static Site
-  - type: web
+  - type: static
     name: smart-log-analyzer-frontend
-    env: static
-    plan: free
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
@@ -40,7 +38,6 @@ services:
           type: web
           name: smart-log-analyzer-backend
           property: host
-          # Render automatically prepends https:// in the app or you can set: https://smart-log-analyzer-backend.onrender.com/api
 
 databases:
   - name: smart-log-db
