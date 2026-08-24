@@ -1,0 +1,11 @@
+timestamp,event_type,severity,source,message
+2024-08-24T10:00:00Z,USER_LOGIN,INFO,auth-service,User logged in successfully
+2024-08-24T10:01:00Z,API_REQUEST,INFO,api-service,GET /api/users returned 200
+2024-08-24T10:02:00Z,DATABASE_QUERY,INFO,api-service,Query executed in 45ms
+2024-08-24T10:03:00Z,DATABASE_ERROR,ERROR,api-service,Connection timeout to database
+2024-08-24T10:03:15Z,DATABASE_ERROR,ERROR,api-service,Failed to execute query
+2024-08-24T10:03:30Z,DATABASE_ERROR,CRITICAL,api-service,Database pool exhausted
+2024-08-24T10:03:45Z,DATABASE_ERROR,CRITICAL,api-service,All connections lost
+2024-08-24T10:04:00Z,DATABASE_ERROR,CRITICAL,api-service,Cannot connect to database
+2024-08-24T10:04:15Z,DATABASE_ERROR,CRITICAL,api-service,Database unreachable
+2024-08-24T10:05:00Z,SYSTEM_RESTART,WARNING,api-service,Attempting database reconnection

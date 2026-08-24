@@ -1,0 +1,37 @@
+[
+  {
+    "timestamp": "2026-08-24T12:30:00Z",
+    "event_type": "PRODUCT_SEARCH",
+    "severity": "INFO",
+    "source": "storefront-web",
+    "message": "Query 'wireless noise cancelling headphones' returned 42 results in 12ms"
+  },
+  {
+    "timestamp": "2026-08-24T12:30:02Z",
+    "event_type": "CART_ADD_ITEM",
+    "severity": "INFO",
+    "source": "storefront-web",
+    "message": "Item SKU_99201 added to cart for user session usr_9981"
+  },
+  {
+    "timestamp": "2026-08-24T12:30:05Z",
+    "event_type": "PAYMENT_GATEWAY_TIMEOUT",
+    "severity": "ERROR",
+    "source": "checkout-service",
+    "message": "HTTPS connection to third-party payment provider timed out after 10000ms"
+  },
+  {
+    "timestamp": "2026-08-24T12:30:08Z",
+    "event_type": "PAYMENT_GATEWAY_CIRCUIT_OPEN",
+    "severity": "CRITICAL",
+    "source": "checkout-service",
+    "message": "Circuit breaker OPEN: 5 consecutive payment gateway failures. Fallback routing activated"
+  },
+  {
+    "timestamp": "2026-08-24T12:30:10Z",
+    "event_type": "ORDER_FAILED_ROLLBACK",
+    "severity": "ERROR",
+    "source": "order-service",
+    "message": "Order #88391 compensation transaction completed. Inventory reservation released"
+  }
+]

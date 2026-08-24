@@ -1,0 +1,48 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Log {
+  id        String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  timestamp DateTime @db.Timestamptz(6)
+  eventType String   @map("event_type") @db.VarChar(255)
+  severity  String   @db.VarChar(50)
+  source    String   @db.VarChar(255)
+  message   String?  @db.Text
+  metadata  Json     @default("{}")
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+
+  anomalyFlag AnomalyFlag?
+
+  @@index([timestamp(sort: Desc)], map: "idx_logs_timestamp")
+  @@index([severity], map: "idx_logs_severity")
+  @@index([source], map: "idx_logs_source")
+  @@index([eventType], map: "idx_logs_event_type")
+  @@index([createdAt(sort: Desc)], map: "idx_logs_created_at")
+  @@map("logs")
+}
+
+model AnomalyFlag {
+  id                 String    @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  logId              String    @unique @map("log_id") @db.Uuid
+  anomalyScore       Decimal   @map("anomaly_score") @db.Decimal(5, 2)
+  detectionReason    String    @map("detection_reason") @db.Text
+  detectionAlgorithm String    @map("detection_algorithm") @db.VarChar(100)
+  aiExplanation      String?   @map("ai_explanation") @db.Text
+  aiRootCause        String?   @map("ai_root_cause") @db.Text
+  aiNextSteps        String?   @map("ai_next_steps") @db.Text
+  flaggedAt          DateTime  @default(now()) @map("flagged_at") @db.Timestamptz(6)
+  aiProcessedAt      DateTime? @map("ai_processed_at") @db.Timestamptz(6)
+
+  log Log @relation(fields: [logId], references: [id], onDelete: Cascade)
+
+  @@index([logId], map: "idx_anomaly_flags_log_id")
+  @@index([flaggedAt(sort: Desc)], map: "idx_anomaly_flags_flagged_at")
+  @@index([anomalyScore(sort: Desc)], map: "idx_anomaly_flags_anomaly_score")
+  @@map("anomaly_flags")
+}

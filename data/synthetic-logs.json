@@ -1,0 +1,4435 @@
+{
+  "generatedAt": "2026-08-24T06:40:05.810Z",
+  "description": "Synthetic log dataset with injected anomalies",
+  "totalEntries": 403,
+  "logs": [
+    {
+      "timestamp": "2026-08-15T09:04:55.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Cache entry found (payment-service)",
+      "metadata": {
+        "requestId": "req-1363",
+        "durationMs": 58
+      }
+    },
+    {
+      "timestamp": "2026-08-15T09:29:39.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Query executed (cache-service)",
+      "metadata": {
+        "requestId": "req-1368",
+        "durationMs": 83
+      }
+    },
+    {
+      "timestamp": "2026-08-15T10:29:49.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "User authenticated successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1374",
+        "durationMs": 153
+      }
+    },
+    {
+      "timestamp": "2026-08-15T10:43:29.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Cache entry found (payment-service)",
+      "metadata": {
+        "requestId": "req-1361",
+        "durationMs": 75
+      }
+    },
+    {
+      "timestamp": "2026-08-15T10:50:17.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Payment captured successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1370",
+        "durationMs": 64
+      }
+    },
+    {
+      "timestamp": "2026-08-15T11:54:39.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "DEBUG",
+      "source": "auth-service",
+      "message": "User session ended (auth-service)",
+      "metadata": {
+        "requestId": "req-1377",
+        "durationMs": 62
+      }
+    },
+    {
+      "timestamp": "2026-08-15T12:18:18.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "DEBUG",
+      "source": "payment-service",
+      "message": "Cache entry found (payment-service)",
+      "metadata": {
+        "requestId": "req-1369",
+        "durationMs": 61
+      }
+    },
+    {
+      "timestamp": "2026-08-15T12:43:47.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "DEBUG",
+      "source": "cache-service",
+      "message": "Payment captured successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1371",
+        "durationMs": 22
+      }
+    },
+    {
+      "timestamp": "2026-08-15T13:59:38.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Query executed (payment-service)",
+      "metadata": {
+        "requestId": "req-1367",
+        "durationMs": 172
+      }
+    },
+    {
+      "timestamp": "2026-08-15T14:02:17.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Request handled successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1373",
+        "durationMs": 35
+      }
+    },
+    {
+      "timestamp": "2026-08-15T15:02:44.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Payment captured successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1364",
+        "durationMs": 202
+      }
+    },
+    {
+      "timestamp": "2026-08-15T15:27:34.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Payment captured successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1376",
+        "durationMs": 181
+      }
+    },
+    {
+      "timestamp": "2026-08-15T15:31:00.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Payment captured successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1379",
+        "durationMs": 93
+      }
+    },
+    {
+      "timestamp": "2026-08-15T15:33:32.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Cache entry found (payment-service)",
+      "metadata": {
+        "requestId": "req-1375",
+        "durationMs": 90
+      }
+    },
+    {
+      "timestamp": "2026-08-15T15:48:08.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "DEBUG",
+      "source": "worker-service",
+      "message": "Service health check passed (worker-service)",
+      "metadata": {
+        "requestId": "req-1378",
+        "durationMs": 146
+      }
+    },
+    {
+      "timestamp": "2026-08-15T15:50:42.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Cache entry missing (cache-service)",
+      "metadata": {
+        "requestId": "req-1360",
+        "durationMs": 51
+      }
+    },
+    {
+      "timestamp": "2026-08-15T16:22:08.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "WARNING",
+      "source": "payment-service",
+      "message": "Cache entry missing (payment-service)",
+      "metadata": {
+        "requestId": "req-1366",
+        "durationMs": 16
+      }
+    },
+    {
+      "timestamp": "2026-08-15T16:43:10.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "User authenticated successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1372",
+        "durationMs": 139
+      }
+    },
+    {
+      "timestamp": "2026-08-15T16:49:59.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "WARNING",
+      "source": "worker-service",
+      "message": "Query executed (worker-service)",
+      "metadata": {
+        "requestId": "req-1365",
+        "durationMs": 126
+      }
+    },
+    {
+      "timestamp": "2026-08-15T16:53:26.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Payment captured successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1362",
+        "durationMs": 206
+      }
+    },
+    {
+      "timestamp": "2026-08-16T09:03:29.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "WARNING",
+      "source": "api-service",
+      "message": "Query executed (api-service)",
+      "metadata": {
+        "requestId": "req-1324",
+        "durationMs": 42
+      }
+    },
+    {
+      "timestamp": "2026-08-16T09:17:30.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "DEBUG",
+      "source": "api-service",
+      "message": "User session ended (api-service)",
+      "metadata": {
+        "requestId": "req-1332",
+        "durationMs": 176
+      }
+    },
+    {
+      "timestamp": "2026-08-16T09:20:58.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Request handled successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1349",
+        "durationMs": 190
+      }
+    },
+    {
+      "timestamp": "2026-08-16T09:26:07.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Payment captured successfully (auth-service)",
+      "metadata": {
+        "requestId": "req-1334",
+        "durationMs": 194
+      }
+    },
+    {
+      "timestamp": "2026-08-16T09:33:37.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "DEBUG",
+      "source": "auth-service",
+      "message": "Service health check passed (auth-service)",
+      "metadata": {
+        "requestId": "req-1322",
+        "durationMs": 49
+      }
+    },
+    {
+      "timestamp": "2026-08-16T09:35:36.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Service health check passed (auth-service)",
+      "metadata": {
+        "requestId": "req-1348",
+        "durationMs": 36
+      }
+    },
+    {
+      "timestamp": "2026-08-16T09:53:40.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "WARNING",
+      "source": "cache-service",
+      "message": "Payment captured successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1325",
+        "durationMs": 127
+      }
+    },
+    {
+      "timestamp": "2026-08-16T10:05:57.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "User authenticated successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1321",
+        "durationMs": 122
+      }
+    },
+    {
+      "timestamp": "2026-08-16T10:07:30.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "User session ended (worker-service)",
+      "metadata": {
+        "requestId": "req-1345",
+        "durationMs": 57
+      }
+    },
+    {
+      "timestamp": "2026-08-16T10:15:43.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "User session ended (api-service)",
+      "metadata": {
+        "requestId": "req-1338",
+        "durationMs": 48
+      }
+    },
+    {
+      "timestamp": "2026-08-16T10:19:34.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Query executed (api-service)",
+      "metadata": {
+        "requestId": "req-1342",
+        "durationMs": 19
+      }
+    },
+    {
+      "timestamp": "2026-08-16T10:25:24.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Cache entry missing (worker-service)",
+      "metadata": {
+        "requestId": "req-1346",
+        "durationMs": 200
+      }
+    },
+    {
+      "timestamp": "2026-08-16T10:30:30.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "DEBUG",
+      "source": "payment-service",
+      "message": "Service health check passed (payment-service)",
+      "metadata": {
+        "requestId": "req-1357",
+        "durationMs": 209
+      }
+    },
+    {
+      "timestamp": "2026-08-16T10:50:31.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "DEBUG",
+      "source": "api-service",
+      "message": "Payment captured successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1353",
+        "durationMs": 86
+      }
+    },
+    {
+      "timestamp": "2026-08-16T11:14:57.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Cache entry found (payment-service)",
+      "metadata": {
+        "requestId": "req-1344",
+        "durationMs": 137
+      }
+    },
+    {
+      "timestamp": "2026-08-16T11:42:44.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "User session ended (worker-service)",
+      "metadata": {
+        "requestId": "req-1350",
+        "durationMs": 172
+      }
+    },
+    {
+      "timestamp": "2026-08-16T11:43:22.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "WARNING",
+      "source": "auth-service",
+      "message": "Cache entry missing (auth-service)",
+      "metadata": {
+        "requestId": "req-1330",
+        "durationMs": 82
+      }
+    },
+    {
+      "timestamp": "2026-08-16T11:44:57.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "User session ended (cache-service)",
+      "metadata": {
+        "requestId": "req-1336",
+        "durationMs": 137
+      }
+    },
+    {
+      "timestamp": "2026-08-16T12:27:48.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "WARNING",
+      "source": "worker-service",
+      "message": "Service health check passed (worker-service)",
+      "metadata": {
+        "requestId": "req-1359",
+        "durationMs": 86
+      }
+    },
+    {
+      "timestamp": "2026-08-16T12:44:36.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Cache entry found (auth-service)",
+      "metadata": {
+        "requestId": "req-1343",
+        "durationMs": 142
+      }
+    },
+    {
+      "timestamp": "2026-08-16T12:52:36.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Cache entry missing (api-service)",
+      "metadata": {
+        "requestId": "req-1351",
+        "durationMs": 139
+      }
+    },
+    {
+      "timestamp": "2026-08-16T13:25:39.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Query executed (worker-service)",
+      "metadata": {
+        "requestId": "req-1356",
+        "durationMs": 200
+      }
+    },
+    {
+      "timestamp": "2026-08-16T13:45:10.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "WARNING",
+      "source": "worker-service",
+      "message": "Service health check passed (worker-service)",
+      "metadata": {
+        "requestId": "req-1333",
+        "durationMs": 70
+      }
+    },
+    {
+      "timestamp": "2026-08-16T13:50:36.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "User authenticated successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1352",
+        "durationMs": 190
+      }
+    },
+    {
+      "timestamp": "2026-08-16T13:56:10.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "DEBUG",
+      "source": "api-service",
+      "message": "Cache entry missing (api-service)",
+      "metadata": {
+        "requestId": "req-1320",
+        "durationMs": 138
+      }
+    },
+    {
+      "timestamp": "2026-08-16T14:23:39.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Cache entry missing (worker-service)",
+      "metadata": {
+        "requestId": "req-1347",
+        "durationMs": 207
+      }
+    },
+    {
+      "timestamp": "2026-08-16T15:18:51.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Payment captured successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1355",
+        "durationMs": 151
+      }
+    },
+    {
+      "timestamp": "2026-08-16T15:35:38.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "User authenticated successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1337",
+        "durationMs": 16
+      }
+    },
+    {
+      "timestamp": "2026-08-16T15:45:18.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "DEBUG",
+      "source": "payment-service",
+      "message": "User authenticated successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1328",
+        "durationMs": 65
+      }
+    },
+    {
+      "timestamp": "2026-08-16T15:52:13.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "DEBUG",
+      "source": "payment-service",
+      "message": "Cache entry missing (payment-service)",
+      "metadata": {
+        "requestId": "req-1329",
+        "durationMs": 87
+      }
+    },
+    {
+      "timestamp": "2026-08-16T15:58:05.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Service health check passed (api-service)",
+      "metadata": {
+        "requestId": "req-1358",
+        "durationMs": 15
+      }
+    },
+    {
+      "timestamp": "2026-08-16T16:01:01.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "User authenticated successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1326",
+        "durationMs": 68
+      }
+    },
+    {
+      "timestamp": "2026-08-16T16:03:24.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Cache entry missing (worker-service)",
+      "metadata": {
+        "requestId": "req-1335",
+        "durationMs": 13
+      }
+    },
+    {
+      "timestamp": "2026-08-16T16:14:07.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "DEBUG",
+      "source": "worker-service",
+      "message": "Background job finished (worker-service)",
+      "metadata": {
+        "requestId": "req-1340",
+        "durationMs": 19
+      }
+    },
+    {
+      "timestamp": "2026-08-16T16:15:05.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "DEBUG",
+      "source": "auth-service",
+      "message": "Query executed (auth-service)",
+      "metadata": {
+        "requestId": "req-1341",
+        "durationMs": 131
+      }
+    },
+    {
+      "timestamp": "2026-08-16T16:21:05.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "WARNING",
+      "source": "payment-service",
+      "message": "User authenticated successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1323",
+        "durationMs": 65
+      }
+    },
+    {
+      "timestamp": "2026-08-16T16:22:50.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "User authenticated successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1339",
+        "durationMs": 110
+      }
+    },
+    {
+      "timestamp": "2026-08-16T16:28:58.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "User session ended (worker-service)",
+      "metadata": {
+        "requestId": "req-1331",
+        "durationMs": 130
+      }
+    },
+    {
+      "timestamp": "2026-08-16T16:33:02.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Request handled successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1327",
+        "durationMs": 162
+      }
+    },
+    {
+      "timestamp": "2026-08-16T16:42:41.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Service health check passed (worker-service)",
+      "metadata": {
+        "requestId": "req-1354",
+        "durationMs": 96
+      }
+    },
+    {
+      "timestamp": "2026-08-17T09:23:52.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Service health check passed (api-service)",
+      "metadata": {
+        "requestId": "req-1306",
+        "durationMs": 180
+      }
+    },
+    {
+      "timestamp": "2026-08-17T10:01:47.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Payment captured successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1307",
+        "durationMs": 203
+      }
+    },
+    {
+      "timestamp": "2026-08-17T10:18:29.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Payment captured successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1299",
+        "durationMs": 158
+      }
+    },
+    {
+      "timestamp": "2026-08-17T10:29:38.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "User authenticated successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1309",
+        "durationMs": 147
+      }
+    },
+    {
+      "timestamp": "2026-08-17T10:38:49.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Service health check passed (auth-service)",
+      "metadata": {
+        "requestId": "req-1292",
+        "durationMs": 68
+      }
+    },
+    {
+      "timestamp": "2026-08-17T10:39:19.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Query executed (cache-service)",
+      "metadata": {
+        "requestId": "req-1296",
+        "durationMs": 73
+      }
+    },
+    {
+      "timestamp": "2026-08-17T10:40:20.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "DEBUG",
+      "source": "worker-service",
+      "message": "Query executed (worker-service)",
+      "metadata": {
+        "requestId": "req-1282",
+        "durationMs": 148
+      }
+    },
+    {
+      "timestamp": "2026-08-17T10:40:33.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "WARNING",
+      "source": "api-service",
+      "message": "Payment captured successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1313",
+        "durationMs": 102
+      }
+    },
+    {
+      "timestamp": "2026-08-17T10:56:27.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Query executed (api-service)",
+      "metadata": {
+        "requestId": "req-1280",
+        "durationMs": 188
+      }
+    },
+    {
+      "timestamp": "2026-08-17T11:02:57.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Request handled successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1310",
+        "durationMs": 142
+      }
+    },
+    {
+      "timestamp": "2026-08-17T11:26:12.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "User session ended (auth-service)",
+      "metadata": {
+        "requestId": "req-1300",
+        "durationMs": 176
+      }
+    },
+    {
+      "timestamp": "2026-08-17T11:33:20.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Service health check passed (auth-service)",
+      "metadata": {
+        "requestId": "req-1289",
+        "durationMs": 107
+      }
+    },
+    {
+      "timestamp": "2026-08-17T11:36:59.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Cache entry found (cache-service)",
+      "metadata": {
+        "requestId": "req-1319",
+        "durationMs": 125
+      }
+    },
+    {
+      "timestamp": "2026-08-17T11:37:42.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Cache entry found (cache-service)",
+      "metadata": {
+        "requestId": "req-1302",
+        "durationMs": 63
+      }
+    },
+    {
+      "timestamp": "2026-08-17T11:54:45.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "WARNING",
+      "source": "payment-service",
+      "message": "Request handled successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1284",
+        "durationMs": 117
+      }
+    },
+    {
+      "timestamp": "2026-08-17T11:57:25.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Background job finished (cache-service)",
+      "metadata": {
+        "requestId": "req-1297",
+        "durationMs": 24
+      }
+    },
+    {
+      "timestamp": "2026-08-17T11:59:00.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "WARNING",
+      "source": "auth-service",
+      "message": "Cache entry found (auth-service)",
+      "metadata": {
+        "requestId": "req-1308",
+        "durationMs": 179
+      }
+    },
+    {
+      "timestamp": "2026-08-17T12:21:56.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Query executed (payment-service)",
+      "metadata": {
+        "requestId": "req-1291",
+        "durationMs": 66
+      }
+    },
+    {
+      "timestamp": "2026-08-17T12:47:22.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "User session ended (api-service)",
+      "metadata": {
+        "requestId": "req-1318",
+        "durationMs": 116
+      }
+    },
+    {
+      "timestamp": "2026-08-17T12:56:32.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "DEBUG",
+      "source": "cache-service",
+      "message": "Request handled successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1303",
+        "durationMs": 148
+      }
+    },
+    {
+      "timestamp": "2026-08-17T12:59:27.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "WARNING",
+      "source": "auth-service",
+      "message": "User authenticated successfully (auth-service)",
+      "metadata": {
+        "requestId": "req-1294",
+        "durationMs": 187
+      }
+    },
+    {
+      "timestamp": "2026-08-17T13:03:41.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Cache entry missing (payment-service)",
+      "metadata": {
+        "requestId": "req-1317",
+        "durationMs": 159
+      }
+    },
+    {
+      "timestamp": "2026-08-17T13:32:07.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Query executed (payment-service)",
+      "metadata": {
+        "requestId": "req-1293",
+        "durationMs": 29
+      }
+    },
+    {
+      "timestamp": "2026-08-17T13:45:14.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "DEBUG",
+      "source": "worker-service",
+      "message": "Background job finished (worker-service)",
+      "metadata": {
+        "requestId": "req-1311",
+        "durationMs": 131
+      }
+    },
+    {
+      "timestamp": "2026-08-17T14:13:12.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Cache entry found (worker-service)",
+      "metadata": {
+        "requestId": "req-1314",
+        "durationMs": 205
+      }
+    },
+    {
+      "timestamp": "2026-08-17T14:21:08.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Payment captured successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1288",
+        "durationMs": 179
+      }
+    },
+    {
+      "timestamp": "2026-08-17T14:33:21.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Payment captured successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1316",
+        "durationMs": 44
+      }
+    },
+    {
+      "timestamp": "2026-08-17T14:45:24.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Service health check passed (api-service)",
+      "metadata": {
+        "requestId": "req-1290",
+        "durationMs": 70
+      }
+    },
+    {
+      "timestamp": "2026-08-17T14:47:25.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Cache entry found (payment-service)",
+      "metadata": {
+        "requestId": "req-1305",
+        "durationMs": 107
+      }
+    },
+    {
+      "timestamp": "2026-08-17T14:48:48.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Background job finished (cache-service)",
+      "metadata": {
+        "requestId": "req-1281",
+        "durationMs": 154
+      }
+    },
+    {
+      "timestamp": "2026-08-17T15:08:21.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "User session ended (api-service)",
+      "metadata": {
+        "requestId": "req-1304",
+        "durationMs": 165
+      }
+    },
+    {
+      "timestamp": "2026-08-17T15:09:51.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Service health check passed (auth-service)",
+      "metadata": {
+        "requestId": "req-1301",
+        "durationMs": 75
+      }
+    },
+    {
+      "timestamp": "2026-08-17T15:23:08.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "DEBUG",
+      "source": "api-service",
+      "message": "Request handled successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1283",
+        "durationMs": 172
+      }
+    },
+    {
+      "timestamp": "2026-08-17T15:33:56.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "DEBUG",
+      "source": "payment-service",
+      "message": "Cache entry found (payment-service)",
+      "metadata": {
+        "requestId": "req-1298",
+        "durationMs": 45
+      }
+    },
+    {
+      "timestamp": "2026-08-17T15:36:57.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "WARNING",
+      "source": "cache-service",
+      "message": "Query executed (cache-service)",
+      "metadata": {
+        "requestId": "req-1312",
+        "durationMs": 195
+      }
+    },
+    {
+      "timestamp": "2026-08-17T16:16:19.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "User authenticated successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1295",
+        "durationMs": 195
+      }
+    },
+    {
+      "timestamp": "2026-08-17T16:22:07.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Background job finished (api-service)",
+      "metadata": {
+        "requestId": "req-1285",
+        "durationMs": 161
+      }
+    },
+    {
+      "timestamp": "2026-08-17T16:35:28.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Payment captured successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1286",
+        "durationMs": 49
+      }
+    },
+    {
+      "timestamp": "2026-08-17T16:52:38.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "User authenticated successfully (auth-service)",
+      "metadata": {
+        "requestId": "req-1287",
+        "durationMs": 200
+      }
+    },
+    {
+      "timestamp": "2026-08-17T16:56:42.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Request handled successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1315",
+        "durationMs": 70
+      }
+    },
+    {
+      "timestamp": "2026-08-18T09:17:53.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "DEBUG",
+      "source": "worker-service",
+      "message": "Service health check passed (worker-service)",
+      "metadata": {
+        "requestId": "req-1258",
+        "durationMs": 117
+      }
+    },
+    {
+      "timestamp": "2026-08-18T09:39:01.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Payment captured successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1257",
+        "durationMs": 70
+      }
+    },
+    {
+      "timestamp": "2026-08-18T09:53:30.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Cache entry found (api-service)",
+      "metadata": {
+        "requestId": "req-1264",
+        "durationMs": 14
+      }
+    },
+    {
+      "timestamp": "2026-08-18T10:02:45.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Background job finished (cache-service)",
+      "metadata": {
+        "requestId": "req-1266",
+        "durationMs": 135
+      }
+    },
+    {
+      "timestamp": "2026-08-18T10:14:03.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Cache entry missing (api-service)",
+      "metadata": {
+        "requestId": "req-1260",
+        "durationMs": 156
+      }
+    },
+    {
+      "timestamp": "2026-08-18T11:25:46.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "WARNING",
+      "source": "worker-service",
+      "message": "Payment captured successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1276",
+        "durationMs": 140
+      }
+    },
+    {
+      "timestamp": "2026-08-18T11:45:36.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "WARNING",
+      "source": "payment-service",
+      "message": "Background job finished (payment-service)",
+      "metadata": {
+        "requestId": "req-1242",
+        "durationMs": 35
+      }
+    },
+    {
+      "timestamp": "2026-08-18T11:47:22.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "WARNING",
+      "source": "api-service",
+      "message": "Cache entry found (api-service)",
+      "metadata": {
+        "requestId": "req-1275",
+        "durationMs": 30
+      }
+    },
+    {
+      "timestamp": "2026-08-18T11:55:01.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "WARNING",
+      "source": "worker-service",
+      "message": "Service health check passed (worker-service)",
+      "metadata": {
+        "requestId": "req-1271",
+        "durationMs": 27
+      }
+    },
+    {
+      "timestamp": "2026-08-18T12:06:20.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Payment captured successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1267",
+        "durationMs": 49
+      }
+    },
+    {
+      "timestamp": "2026-08-18T12:07:13.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "User authenticated successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1265",
+        "durationMs": 54
+      }
+    },
+    {
+      "timestamp": "2026-08-18T12:10:41.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "WARNING",
+      "source": "payment-service",
+      "message": "Background job finished (payment-service)",
+      "metadata": {
+        "requestId": "req-1268",
+        "durationMs": 41
+      }
+    },
+    {
+      "timestamp": "2026-08-18T12:23:35.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Payment captured successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1270",
+        "durationMs": 31
+      }
+    },
+    {
+      "timestamp": "2026-08-18T12:25:53.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "WARNING",
+      "source": "auth-service",
+      "message": "Background job finished (auth-service)",
+      "metadata": {
+        "requestId": "req-1261",
+        "durationMs": 133
+      }
+    },
+    {
+      "timestamp": "2026-08-18T12:29:04.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Background job finished (cache-service)",
+      "metadata": {
+        "requestId": "req-1240",
+        "durationMs": 129
+      }
+    },
+    {
+      "timestamp": "2026-08-18T12:36:52.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Payment captured successfully (auth-service)",
+      "metadata": {
+        "requestId": "req-1278",
+        "durationMs": 14
+      }
+    },
+    {
+      "timestamp": "2026-08-18T12:55:49.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Cache entry missing (api-service)",
+      "metadata": {
+        "requestId": "req-1273",
+        "durationMs": 187
+      }
+    },
+    {
+      "timestamp": "2026-08-18T13:03:09.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "WARNING",
+      "source": "payment-service",
+      "message": "Payment captured successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1262",
+        "durationMs": 40
+      }
+    },
+    {
+      "timestamp": "2026-08-18T13:05:48.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "WARNING",
+      "source": "cache-service",
+      "message": "Background job finished (cache-service)",
+      "metadata": {
+        "requestId": "req-1243",
+        "durationMs": 71
+      }
+    },
+    {
+      "timestamp": "2026-08-18T13:17:08.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "WARNING",
+      "source": "cache-service",
+      "message": "User authenticated successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1256",
+        "durationMs": 144
+      }
+    },
+    {
+      "timestamp": "2026-08-18T13:23:54.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Payment captured successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1241",
+        "durationMs": 149
+      }
+    },
+    {
+      "timestamp": "2026-08-18T13:45:01.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "DEBUG",
+      "source": "api-service",
+      "message": "Query executed (api-service)",
+      "metadata": {
+        "requestId": "req-1249",
+        "durationMs": 21
+      }
+    },
+    {
+      "timestamp": "2026-08-18T13:46:24.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "User authenticated successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1253",
+        "durationMs": 168
+      }
+    },
+    {
+      "timestamp": "2026-08-18T13:50:24.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Payment captured successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1250",
+        "durationMs": 146
+      }
+    },
+    {
+      "timestamp": "2026-08-18T13:50:37.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "DEBUG",
+      "source": "auth-service",
+      "message": "Background job finished (auth-service)",
+      "metadata": {
+        "requestId": "req-1244",
+        "durationMs": 61
+      }
+    },
+    {
+      "timestamp": "2026-08-18T13:55:05.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "WARNING",
+      "source": "api-service",
+      "message": "Payment captured successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1254",
+        "durationMs": 81
+      }
+    },
+    {
+      "timestamp": "2026-08-18T14:58:18.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "WARNING",
+      "source": "api-service",
+      "message": "Payment captured successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1269",
+        "durationMs": 144
+      }
+    },
+    {
+      "timestamp": "2026-08-18T15:05:09.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "User session ended (cache-service)",
+      "metadata": {
+        "requestId": "req-1251",
+        "durationMs": 173
+      }
+    },
+    {
+      "timestamp": "2026-08-18T15:12:02.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "User authenticated successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1252",
+        "durationMs": 166
+      }
+    },
+    {
+      "timestamp": "2026-08-18T15:32:20.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "DEBUG",
+      "source": "auth-service",
+      "message": "Query executed (auth-service)",
+      "metadata": {
+        "requestId": "req-1272",
+        "durationMs": 74
+      }
+    },
+    {
+      "timestamp": "2026-08-18T15:32:58.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Cache entry found (auth-service)",
+      "metadata": {
+        "requestId": "req-1263",
+        "durationMs": 180
+      }
+    },
+    {
+      "timestamp": "2026-08-18T16:01:05.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Request handled successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1259",
+        "durationMs": 42
+      }
+    },
+    {
+      "timestamp": "2026-08-18T16:10:55.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "User session ended (api-service)",
+      "metadata": {
+        "requestId": "req-1279",
+        "durationMs": 176
+      }
+    },
+    {
+      "timestamp": "2026-08-18T16:11:26.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Cache entry found (payment-service)",
+      "metadata": {
+        "requestId": "req-1247",
+        "durationMs": 50
+      }
+    },
+    {
+      "timestamp": "2026-08-18T16:15:53.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "DEBUG",
+      "source": "api-service",
+      "message": "Payment captured successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1277",
+        "durationMs": 77
+      }
+    },
+    {
+      "timestamp": "2026-08-18T16:16:25.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "DEBUG",
+      "source": "api-service",
+      "message": "Request handled successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1274",
+        "durationMs": 139
+      }
+    },
+    {
+      "timestamp": "2026-08-18T16:21:25.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Request handled successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1246",
+        "durationMs": 131
+      }
+    },
+    {
+      "timestamp": "2026-08-18T16:34:53.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Payment captured successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1245",
+        "durationMs": 185
+      }
+    },
+    {
+      "timestamp": "2026-08-18T16:40:45.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Payment captured successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1255",
+        "durationMs": 151
+      }
+    },
+    {
+      "timestamp": "2026-08-18T16:51:22.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "WARNING",
+      "source": "cache-service",
+      "message": "Payment captured successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1248",
+        "durationMs": 153
+      }
+    },
+    {
+      "timestamp": "2026-08-19T09:02:44.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "WARNING",
+      "source": "worker-service",
+      "message": "Query executed (worker-service)",
+      "metadata": {
+        "requestId": "req-1204",
+        "durationMs": 59
+      }
+    },
+    {
+      "timestamp": "2026-08-19T09:05:37.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Query executed (cache-service)",
+      "metadata": {
+        "requestId": "req-1200",
+        "durationMs": 155
+      }
+    },
+    {
+      "timestamp": "2026-08-19T09:07:02.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Cache entry missing (auth-service)",
+      "metadata": {
+        "requestId": "req-1212",
+        "durationMs": 136
+      }
+    },
+    {
+      "timestamp": "2026-08-19T09:10:29.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Cache entry found (worker-service)",
+      "metadata": {
+        "requestId": "req-1207",
+        "durationMs": 164
+      }
+    },
+    {
+      "timestamp": "2026-08-19T09:10:47.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Service health check passed (worker-service)",
+      "metadata": {
+        "requestId": "req-1218",
+        "durationMs": 99
+      }
+    },
+    {
+      "timestamp": "2026-08-19T09:37:51.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Cache entry missing (api-service)",
+      "metadata": {
+        "requestId": "req-1214",
+        "durationMs": 73
+      }
+    },
+    {
+      "timestamp": "2026-08-19T09:56:31.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "DEBUG",
+      "source": "api-service",
+      "message": "Cache entry found (api-service)",
+      "metadata": {
+        "requestId": "req-1210",
+        "durationMs": 158
+      }
+    },
+    {
+      "timestamp": "2026-08-19T10:02:12.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Service health check passed (payment-service)",
+      "metadata": {
+        "requestId": "req-1203",
+        "durationMs": 112
+      }
+    },
+    {
+      "timestamp": "2026-08-19T10:29:52.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Service health check passed (auth-service)",
+      "metadata": {
+        "requestId": "req-1215",
+        "durationMs": 14
+      }
+    },
+    {
+      "timestamp": "2026-08-19T10:38:49.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Request handled successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1211",
+        "durationMs": 134
+      }
+    },
+    {
+      "timestamp": "2026-08-19T11:32:48.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "WARNING",
+      "source": "auth-service",
+      "message": "Payment captured successfully (auth-service)",
+      "metadata": {
+        "requestId": "req-1232",
+        "durationMs": 12
+      }
+    },
+    {
+      "timestamp": "2026-08-19T12:28:18.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "WARNING",
+      "source": "payment-service",
+      "message": "Payment captured successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1223",
+        "durationMs": 123
+      }
+    },
+    {
+      "timestamp": "2026-08-19T12:30:40.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Cache entry found (worker-service)",
+      "metadata": {
+        "requestId": "req-1209",
+        "durationMs": 175
+      }
+    },
+    {
+      "timestamp": "2026-08-19T12:43:13.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Payment captured successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1202",
+        "durationMs": 57
+      }
+    },
+    {
+      "timestamp": "2026-08-19T12:55:09.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "User session ended (api-service)",
+      "metadata": {
+        "requestId": "req-1230",
+        "durationMs": 87
+      }
+    },
+    {
+      "timestamp": "2026-08-19T13:03:53.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Service health check passed (payment-service)",
+      "metadata": {
+        "requestId": "req-1225",
+        "durationMs": 47
+      }
+    },
+    {
+      "timestamp": "2026-08-19T13:06:57.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "DEBUG",
+      "source": "cache-service",
+      "message": "Payment captured successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1208",
+        "durationMs": 15
+      }
+    },
+    {
+      "timestamp": "2026-08-19T13:11:13.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Cache entry missing (payment-service)",
+      "metadata": {
+        "requestId": "req-1239",
+        "durationMs": 161
+      }
+    },
+    {
+      "timestamp": "2026-08-19T13:18:39.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "User authenticated successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1224",
+        "durationMs": 95
+      }
+    },
+    {
+      "timestamp": "2026-08-19T13:22:31.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Background job finished (worker-service)",
+      "metadata": {
+        "requestId": "req-1217",
+        "durationMs": 64
+      }
+    },
+    {
+      "timestamp": "2026-08-19T13:39:32.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "WARNING",
+      "source": "api-service",
+      "message": "Service health check passed (api-service)",
+      "metadata": {
+        "requestId": "req-1231",
+        "durationMs": 208
+      }
+    },
+    {
+      "timestamp": "2026-08-19T13:42:18.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "DEBUG",
+      "source": "auth-service",
+      "message": "Cache entry found (auth-service)",
+      "metadata": {
+        "requestId": "req-1221",
+        "durationMs": 129
+      }
+    },
+    {
+      "timestamp": "2026-08-19T13:46:42.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Service health check passed (auth-service)",
+      "metadata": {
+        "requestId": "req-1201",
+        "durationMs": 68
+      }
+    },
+    {
+      "timestamp": "2026-08-19T13:50:11.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "DEBUG",
+      "source": "worker-service",
+      "message": "Request handled successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1236",
+        "durationMs": 184
+      }
+    },
+    {
+      "timestamp": "2026-08-19T14:00:09.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Payment captured successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1233",
+        "durationMs": 35
+      }
+    },
+    {
+      "timestamp": "2026-08-19T14:14:16.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Payment captured successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1216",
+        "durationMs": 190
+      }
+    },
+    {
+      "timestamp": "2026-08-19T14:28:30.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Cache entry missing (api-service)",
+      "metadata": {
+        "requestId": "req-1229",
+        "durationMs": 40
+      }
+    },
+    {
+      "timestamp": "2026-08-19T14:30:57.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Background job finished (cache-service)",
+      "metadata": {
+        "requestId": "req-1222",
+        "durationMs": 74
+      }
+    },
+    {
+      "timestamp": "2026-08-19T14:33:07.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "WARNING",
+      "source": "api-service",
+      "message": "User session ended (api-service)",
+      "metadata": {
+        "requestId": "req-1226",
+        "durationMs": 32
+      }
+    },
+    {
+      "timestamp": "2026-08-19T14:43:07.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "DEBUG",
+      "source": "cache-service",
+      "message": "Background job finished (cache-service)",
+      "metadata": {
+        "requestId": "req-1220",
+        "durationMs": 19
+      }
+    },
+    {
+      "timestamp": "2026-08-19T14:55:26.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Query executed (api-service)",
+      "metadata": {
+        "requestId": "req-1228",
+        "durationMs": 20
+      }
+    },
+    {
+      "timestamp": "2026-08-19T15:30:04.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Cache entry found (worker-service)",
+      "metadata": {
+        "requestId": "req-1227",
+        "durationMs": 160
+      }
+    },
+    {
+      "timestamp": "2026-08-19T15:39:54.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "DEBUG",
+      "source": "api-service",
+      "message": "Request handled successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1205",
+        "durationMs": 23
+      }
+    },
+    {
+      "timestamp": "2026-08-19T15:53:17.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Payment captured successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1238",
+        "durationMs": 83
+      }
+    },
+    {
+      "timestamp": "2026-08-19T16:07:41.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Cache entry found (payment-service)",
+      "metadata": {
+        "requestId": "req-1206",
+        "durationMs": 173
+      }
+    },
+    {
+      "timestamp": "2026-08-19T16:10:51.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Request handled successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1219",
+        "durationMs": 136
+      }
+    },
+    {
+      "timestamp": "2026-08-19T16:12:25.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "DEBUG",
+      "source": "auth-service",
+      "message": "Cache entry missing (auth-service)",
+      "metadata": {
+        "requestId": "req-1235",
+        "durationMs": 165
+      }
+    },
+    {
+      "timestamp": "2026-08-19T16:13:45.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Background job finished (api-service)",
+      "metadata": {
+        "requestId": "req-1213",
+        "durationMs": 69
+      }
+    },
+    {
+      "timestamp": "2026-08-19T16:44:42.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Request handled successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1237",
+        "durationMs": 34
+      }
+    },
+    {
+      "timestamp": "2026-08-19T16:52:58.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "DEBUG",
+      "source": "payment-service",
+      "message": "Service health check passed (payment-service)",
+      "metadata": {
+        "requestId": "req-1234",
+        "durationMs": 55
+      }
+    },
+    {
+      "timestamp": "2026-08-20T09:01:15.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "WARNING",
+      "source": "payment-service",
+      "message": "Background job finished (payment-service)",
+      "metadata": {
+        "requestId": "req-1163",
+        "durationMs": 164
+      }
+    },
+    {
+      "timestamp": "2026-08-20T09:04:45.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Query executed (api-service)",
+      "metadata": {
+        "requestId": "req-1170",
+        "durationMs": 126
+      }
+    },
+    {
+      "timestamp": "2026-08-20T09:10:14.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Cache entry missing (payment-service)",
+      "metadata": {
+        "requestId": "req-1181",
+        "durationMs": 116
+      }
+    },
+    {
+      "timestamp": "2026-08-20T09:21:27.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Query executed (auth-service)",
+      "metadata": {
+        "requestId": "req-1160",
+        "durationMs": 85
+      }
+    },
+    {
+      "timestamp": "2026-08-20T09:24:03.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Payment captured successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1177",
+        "durationMs": 112
+      }
+    },
+    {
+      "timestamp": "2026-08-20T09:57:40.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "DEBUG",
+      "source": "payment-service",
+      "message": "Request handled successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1172",
+        "durationMs": 104
+      }
+    },
+    {
+      "timestamp": "2026-08-20T10:22:23.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "DEBUG",
+      "source": "auth-service",
+      "message": "Service health check passed (auth-service)",
+      "metadata": {
+        "requestId": "req-1190",
+        "durationMs": 56
+      }
+    },
+    {
+      "timestamp": "2026-08-20T10:33:29.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "WARNING",
+      "source": "auth-service",
+      "message": "User session ended (auth-service)",
+      "metadata": {
+        "requestId": "req-1161",
+        "durationMs": 171
+      }
+    },
+    {
+      "timestamp": "2026-08-20T11:06:29.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Cache entry missing (api-service)",
+      "metadata": {
+        "requestId": "req-1168",
+        "durationMs": 85
+      }
+    },
+    {
+      "timestamp": "2026-08-20T11:18:21.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "User session ended (cache-service)",
+      "metadata": {
+        "requestId": "req-1195",
+        "durationMs": 84
+      }
+    },
+    {
+      "timestamp": "2026-08-20T11:30:56.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "DEBUG",
+      "source": "cache-service",
+      "message": "User session ended (cache-service)",
+      "metadata": {
+        "requestId": "req-1178",
+        "durationMs": 177
+      }
+    },
+    {
+      "timestamp": "2026-08-20T11:41:16.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "User authenticated successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1194",
+        "durationMs": 33
+      }
+    },
+    {
+      "timestamp": "2026-08-20T11:45:31.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Query executed (auth-service)",
+      "metadata": {
+        "requestId": "req-1193",
+        "durationMs": 160
+      }
+    },
+    {
+      "timestamp": "2026-08-20T11:48:13.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "User authenticated successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1189",
+        "durationMs": 141
+      }
+    },
+    {
+      "timestamp": "2026-08-20T11:59:06.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "DEBUG",
+      "source": "payment-service",
+      "message": "Request handled successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1196",
+        "durationMs": 84
+      }
+    },
+    {
+      "timestamp": "2026-08-20T12:06:21.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "DEBUG",
+      "source": "auth-service",
+      "message": "Background job finished (auth-service)",
+      "metadata": {
+        "requestId": "req-1169",
+        "durationMs": 86
+      }
+    },
+    {
+      "timestamp": "2026-08-20T12:23:27.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Request handled successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1192",
+        "durationMs": 98
+      }
+    },
+    {
+      "timestamp": "2026-08-20T12:50:59.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Payment captured successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1183",
+        "durationMs": 42
+      }
+    },
+    {
+      "timestamp": "2026-08-20T12:57:00.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "WARNING",
+      "source": "api-service",
+      "message": "Request handled successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1184",
+        "durationMs": 119
+      }
+    },
+    {
+      "timestamp": "2026-08-20T13:18:53.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "User authenticated successfully (auth-service)",
+      "metadata": {
+        "requestId": "req-1165",
+        "durationMs": 207
+      }
+    },
+    {
+      "timestamp": "2026-08-20T13:38:49.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Request handled successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1164",
+        "durationMs": 164
+      }
+    },
+    {
+      "timestamp": "2026-08-20T13:40:17.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Cache entry found (payment-service)",
+      "metadata": {
+        "requestId": "req-1191",
+        "durationMs": 206
+      }
+    },
+    {
+      "timestamp": "2026-08-20T13:44:56.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Background job finished (cache-service)",
+      "metadata": {
+        "requestId": "req-1188",
+        "durationMs": 34
+      }
+    },
+    {
+      "timestamp": "2026-08-20T13:58:50.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "WARNING",
+      "source": "auth-service",
+      "message": "Request handled successfully (auth-service)",
+      "metadata": {
+        "requestId": "req-1199",
+        "durationMs": 158
+      }
+    },
+    {
+      "timestamp": "2026-08-20T14:16:51.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "WARNING",
+      "source": "api-service",
+      "message": "Background job finished (api-service)",
+      "metadata": {
+        "requestId": "req-1182",
+        "durationMs": 131
+      }
+    },
+    {
+      "timestamp": "2026-08-20T14:30:47.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Cache entry found (worker-service)",
+      "metadata": {
+        "requestId": "req-1179",
+        "durationMs": 47
+      }
+    },
+    {
+      "timestamp": "2026-08-20T14:36:46.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "DEBUG",
+      "source": "auth-service",
+      "message": "User session ended (auth-service)",
+      "metadata": {
+        "requestId": "req-1197",
+        "durationMs": 147
+      }
+    },
+    {
+      "timestamp": "2026-08-20T14:47:41.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Cache entry missing (api-service)",
+      "metadata": {
+        "requestId": "req-1186",
+        "durationMs": 129
+      }
+    },
+    {
+      "timestamp": "2026-08-20T15:03:00.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "WARNING",
+      "source": "auth-service",
+      "message": "Payment captured successfully (auth-service)",
+      "metadata": {
+        "requestId": "req-1175",
+        "durationMs": 144
+      }
+    },
+    {
+      "timestamp": "2026-08-20T15:14:09.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Query executed (auth-service)",
+      "metadata": {
+        "requestId": "req-1167",
+        "durationMs": 209
+      }
+    },
+    {
+      "timestamp": "2026-08-20T15:21:26.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "DEBUG",
+      "source": "auth-service",
+      "message": "Request handled successfully (auth-service)",
+      "metadata": {
+        "requestId": "req-1198",
+        "durationMs": 29
+      }
+    },
+    {
+      "timestamp": "2026-08-20T15:23:56.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Payment captured successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1187",
+        "durationMs": 50
+      }
+    },
+    {
+      "timestamp": "2026-08-20T15:38:28.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Cache entry found (auth-service)",
+      "metadata": {
+        "requestId": "req-1180",
+        "durationMs": 79
+      }
+    },
+    {
+      "timestamp": "2026-08-20T16:09:27.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "User session ended (api-service)",
+      "metadata": {
+        "requestId": "req-1171",
+        "durationMs": 176
+      }
+    },
+    {
+      "timestamp": "2026-08-20T16:11:13.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Cache entry missing (payment-service)",
+      "metadata": {
+        "requestId": "req-1185",
+        "durationMs": 137
+      }
+    },
+    {
+      "timestamp": "2026-08-20T16:15:53.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Cache entry missing (worker-service)",
+      "metadata": {
+        "requestId": "req-1174",
+        "durationMs": 179
+      }
+    },
+    {
+      "timestamp": "2026-08-20T16:17:41.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Request handled successfully (auth-service)",
+      "metadata": {
+        "requestId": "req-1176",
+        "durationMs": 57
+      }
+    },
+    {
+      "timestamp": "2026-08-20T16:32:39.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "User authenticated successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1173",
+        "durationMs": 173
+      }
+    },
+    {
+      "timestamp": "2026-08-20T16:44:20.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Service health check passed (cache-service)",
+      "metadata": {
+        "requestId": "req-1162",
+        "durationMs": 146
+      }
+    },
+    {
+      "timestamp": "2026-08-20T16:47:15.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "WARNING",
+      "source": "worker-service",
+      "message": "Query executed (worker-service)",
+      "metadata": {
+        "requestId": "req-1166",
+        "durationMs": 160
+      }
+    },
+    {
+      "timestamp": "2026-08-21T09:13:19.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Query executed (cache-service)",
+      "metadata": {
+        "requestId": "req-1123",
+        "durationMs": 29
+      }
+    },
+    {
+      "timestamp": "2026-08-21T09:30:05.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "WARNING",
+      "source": "worker-service",
+      "message": "Cache entry missing (worker-service)",
+      "metadata": {
+        "requestId": "req-1137",
+        "durationMs": 100
+      }
+    },
+    {
+      "timestamp": "2026-08-21T09:41:25.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "User authenticated successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1127",
+        "durationMs": 117
+      }
+    },
+    {
+      "timestamp": "2026-08-21T09:42:39.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "User authenticated successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1149",
+        "durationMs": 141
+      }
+    },
+    {
+      "timestamp": "2026-08-21T09:46:14.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Background job finished (auth-service)",
+      "metadata": {
+        "requestId": "req-1140",
+        "durationMs": 104
+      }
+    },
+    {
+      "timestamp": "2026-08-21T09:58:43.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "DEBUG",
+      "source": "payment-service",
+      "message": "Request handled successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1150",
+        "durationMs": 187
+      }
+    },
+    {
+      "timestamp": "2026-08-21T10:20:23.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "WARNING",
+      "source": "cache-service",
+      "message": "Cache entry found (cache-service)",
+      "metadata": {
+        "requestId": "req-1134",
+        "durationMs": 53
+      }
+    },
+    {
+      "timestamp": "2026-08-21T10:24:00.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Payment captured successfully (auth-service)",
+      "metadata": {
+        "requestId": "req-1154",
+        "durationMs": 127
+      }
+    },
+    {
+      "timestamp": "2026-08-21T10:24:03.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Payment captured successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1135",
+        "durationMs": 18
+      }
+    },
+    {
+      "timestamp": "2026-08-21T10:29:18.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "DEBUG",
+      "source": "payment-service",
+      "message": "Service health check passed (payment-service)",
+      "metadata": {
+        "requestId": "req-1120",
+        "durationMs": 47
+      }
+    },
+    {
+      "timestamp": "2026-08-21T10:41:51.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "DEBUG",
+      "source": "auth-service",
+      "message": "Service health check passed (auth-service)",
+      "metadata": {
+        "requestId": "req-1159",
+        "durationMs": 193
+      }
+    },
+    {
+      "timestamp": "2026-08-21T10:44:31.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Cache entry found (payment-service)",
+      "metadata": {
+        "requestId": "req-1136",
+        "durationMs": 134
+      }
+    },
+    {
+      "timestamp": "2026-08-21T10:58:43.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Service health check passed (cache-service)",
+      "metadata": {
+        "requestId": "req-1124",
+        "durationMs": 149
+      }
+    },
+    {
+      "timestamp": "2026-08-21T11:00:49.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Cache entry found (payment-service)",
+      "metadata": {
+        "requestId": "req-1156",
+        "durationMs": 56
+      }
+    },
+    {
+      "timestamp": "2026-08-21T11:20:33.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Service health check passed (api-service)",
+      "metadata": {
+        "requestId": "req-1130",
+        "durationMs": 63
+      }
+    },
+    {
+      "timestamp": "2026-08-21T11:31:01.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Query executed (payment-service)",
+      "metadata": {
+        "requestId": "req-1133",
+        "durationMs": 76
+      }
+    },
+    {
+      "timestamp": "2026-08-21T12:13:11.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Request handled successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1126",
+        "durationMs": 155
+      }
+    },
+    {
+      "timestamp": "2026-08-21T12:23:32.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "DEBUG",
+      "source": "api-service",
+      "message": "Service health check passed (api-service)",
+      "metadata": {
+        "requestId": "req-1129",
+        "durationMs": 58
+      }
+    },
+    {
+      "timestamp": "2026-08-21T12:26:35.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "DEBUG",
+      "source": "cache-service",
+      "message": "Cache entry found (cache-service)",
+      "metadata": {
+        "requestId": "req-1155",
+        "durationMs": 187
+      }
+    },
+    {
+      "timestamp": "2026-08-21T12:38:09.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "DEBUG",
+      "source": "cache-service",
+      "message": "Cache entry missing (cache-service)",
+      "metadata": {
+        "requestId": "req-1147",
+        "durationMs": 195
+      }
+    },
+    {
+      "timestamp": "2026-08-21T12:40:25.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "WARNING",
+      "source": "worker-service",
+      "message": "User authenticated successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1139",
+        "durationMs": 160
+      }
+    },
+    {
+      "timestamp": "2026-08-21T12:41:26.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Payment captured successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1142",
+        "durationMs": 128
+      }
+    },
+    {
+      "timestamp": "2026-08-21T12:49:29.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Query executed (api-service)",
+      "metadata": {
+        "requestId": "req-1144",
+        "durationMs": 67
+      }
+    },
+    {
+      "timestamp": "2026-08-21T13:02:27.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Cache entry found (api-service)",
+      "metadata": {
+        "requestId": "req-1146",
+        "durationMs": 50
+      }
+    },
+    {
+      "timestamp": "2026-08-21T13:05:58.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Cache entry missing (api-service)",
+      "metadata": {
+        "requestId": "req-1125",
+        "durationMs": 157
+      }
+    },
+    {
+      "timestamp": "2026-08-21T13:12:08.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Request handled successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1141",
+        "durationMs": 108
+      }
+    },
+    {
+      "timestamp": "2026-08-21T13:30:45.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Cache entry found (auth-service)",
+      "metadata": {
+        "requestId": "req-1138",
+        "durationMs": 24
+      }
+    },
+    {
+      "timestamp": "2026-08-21T13:33:51.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Cache entry missing (payment-service)",
+      "metadata": {
+        "requestId": "req-1145",
+        "durationMs": 73
+      }
+    },
+    {
+      "timestamp": "2026-08-21T13:39:12.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "DEBUG",
+      "source": "api-service",
+      "message": "Cache entry missing (api-service)",
+      "metadata": {
+        "requestId": "req-1157",
+        "durationMs": 172
+      }
+    },
+    {
+      "timestamp": "2026-08-21T13:56:02.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Service health check passed (cache-service)",
+      "metadata": {
+        "requestId": "req-1121",
+        "durationMs": 146
+      }
+    },
+    {
+      "timestamp": "2026-08-21T14:00:23.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Cache entry found (auth-service)",
+      "metadata": {
+        "requestId": "req-1131",
+        "durationMs": 200
+      }
+    },
+    {
+      "timestamp": "2026-08-21T14:31:09.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Request handled successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1148",
+        "durationMs": 176
+      }
+    },
+    {
+      "timestamp": "2026-08-21T14:42:48.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "DEBUG",
+      "source": "worker-service",
+      "message": "Service health check passed (worker-service)",
+      "metadata": {
+        "requestId": "req-1122",
+        "durationMs": 47
+      }
+    },
+    {
+      "timestamp": "2026-08-21T15:10:14.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Request handled successfully (auth-service)",
+      "metadata": {
+        "requestId": "req-1153",
+        "durationMs": 40
+      }
+    },
+    {
+      "timestamp": "2026-08-21T15:10:57.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "WARNING",
+      "source": "cache-service",
+      "message": "Background job finished (cache-service)",
+      "metadata": {
+        "requestId": "req-1158",
+        "durationMs": 72
+      }
+    },
+    {
+      "timestamp": "2026-08-21T15:22:07.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Query executed (cache-service)",
+      "metadata": {
+        "requestId": "req-1132",
+        "durationMs": 179
+      }
+    },
+    {
+      "timestamp": "2026-08-21T15:51:32.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "User session ended (worker-service)",
+      "metadata": {
+        "requestId": "req-1151",
+        "durationMs": 127
+      }
+    },
+    {
+      "timestamp": "2026-08-21T16:03:48.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Payment captured successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1143",
+        "durationMs": 63
+      }
+    },
+    {
+      "timestamp": "2026-08-21T16:21:13.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Payment captured successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1128",
+        "durationMs": 143
+      }
+    },
+    {
+      "timestamp": "2026-08-21T16:50:02.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Query executed (worker-service)",
+      "metadata": {
+        "requestId": "req-1152",
+        "durationMs": 105
+      }
+    },
+    {
+      "timestamp": "2026-08-22T09:02:05.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Query executed (worker-service)",
+      "metadata": {
+        "requestId": "req-1093",
+        "durationMs": 115
+      }
+    },
+    {
+      "timestamp": "2026-08-22T09:07:43.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Cache entry missing (auth-service)",
+      "metadata": {
+        "requestId": "req-1084",
+        "durationMs": 192
+      }
+    },
+    {
+      "timestamp": "2026-08-22T09:23:56.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Cache entry missing (cache-service)",
+      "metadata": {
+        "requestId": "req-1082",
+        "durationMs": 158
+      }
+    },
+    {
+      "timestamp": "2026-08-22T09:32:42.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Query executed (payment-service)",
+      "metadata": {
+        "requestId": "req-1100",
+        "durationMs": 202
+      }
+    },
+    {
+      "timestamp": "2026-08-22T09:57:58.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Background job finished (cache-service)",
+      "metadata": {
+        "requestId": "req-1102",
+        "durationMs": 129
+      }
+    },
+    {
+      "timestamp": "2026-08-22T10:05:28.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "User session ended (api-service)",
+      "metadata": {
+        "requestId": "req-1113",
+        "durationMs": 176
+      }
+    },
+    {
+      "timestamp": "2026-08-22T10:12:50.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Background job finished (api-service)",
+      "metadata": {
+        "requestId": "req-1108",
+        "durationMs": 106
+      }
+    },
+    {
+      "timestamp": "2026-08-22T10:12:50.000Z",
+      "event_type": "DATABASE_ERROR",
+      "severity": "ERROR",
+      "source": "api-service",
+      "message": "Database connection failure #1",
+      "metadata": {
+        "retryAttempt": 1,
+        "cluster": "primary",
+        "statusCode": 503
+      }
+    },
+    {
+      "timestamp": "2026-08-22T10:12:56.000Z",
+      "event_type": "DATABASE_ERROR",
+      "severity": "ERROR",
+      "source": "api-service",
+      "message": "Database connection failure #2",
+      "metadata": {
+        "retryAttempt": 2,
+        "cluster": "primary",
+        "statusCode": 503
+      }
+    },
+    {
+      "timestamp": "2026-08-22T10:13:02.000Z",
+      "event_type": "DATABASE_ERROR",
+      "severity": "ERROR",
+      "source": "api-service",
+      "message": "Database connection failure #3",
+      "metadata": {
+        "retryAttempt": 3,
+        "cluster": "primary",
+        "statusCode": 503
+      }
+    },
+    {
+      "timestamp": "2026-08-22T10:13:08.000Z",
+      "event_type": "DATABASE_ERROR",
+      "severity": "ERROR",
+      "source": "api-service",
+      "message": "Database connection failure #4",
+      "metadata": {
+        "retryAttempt": 4,
+        "cluster": "primary",
+        "statusCode": 503
+      }
+    },
+    {
+      "timestamp": "2026-08-22T10:13:14.000Z",
+      "event_type": "DATABASE_ERROR",
+      "severity": "ERROR",
+      "source": "api-service",
+      "message": "Database connection failure #5",
+      "metadata": {
+        "retryAttempt": 5,
+        "cluster": "primary",
+        "statusCode": 503
+      }
+    },
+    {
+      "timestamp": "2026-08-22T10:13:20.000Z",
+      "event_type": "DATABASE_ERROR",
+      "severity": "ERROR",
+      "source": "api-service",
+      "message": "Database connection failure #6",
+      "metadata": {
+        "retryAttempt": 6,
+        "cluster": "primary",
+        "statusCode": 503
+      }
+    },
+    {
+      "timestamp": "2026-08-22T10:13:26.000Z",
+      "event_type": "DATABASE_ERROR",
+      "severity": "CRITICAL",
+      "source": "api-service",
+      "message": "Database connection failure #7",
+      "metadata": {
+        "retryAttempt": 7,
+        "cluster": "primary",
+        "statusCode": 503
+      }
+    },
+    {
+      "timestamp": "2026-08-22T10:13:32.000Z",
+      "event_type": "DATABASE_ERROR",
+      "severity": "CRITICAL",
+      "source": "api-service",
+      "message": "Database connection failure #8",
+      "metadata": {
+        "retryAttempt": 8,
+        "cluster": "primary",
+        "statusCode": 503
+      }
+    },
+    {
+      "timestamp": "2026-08-22T10:21:09.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "DEBUG",
+      "source": "worker-service",
+      "message": "Cache entry missing (worker-service)",
+      "metadata": {
+        "requestId": "req-1110",
+        "durationMs": 118
+      }
+    },
+    {
+      "timestamp": "2026-08-22T10:27:50.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Spike traffic request 1",
+      "metadata": {
+        "spike": true,
+        "route": "/api/search"
+      }
+    },
+    {
+      "timestamp": "2026-08-22T10:27:50.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Spike traffic request 2",
+      "metadata": {
+        "spike": true,
+        "route": "/api/search"
+      }
+    },
+    {
+      "timestamp": "2026-08-22T10:27:50.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Spike traffic request 3",
+      "metadata": {
+        "spike": true,
+        "route": "/api/search"
+      }
+    },
+    {
+      "timestamp": "2026-08-22T10:28:50.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Spike traffic request 4",
+      "metadata": {
+        "spike": true,
+        "route": "/api/search"
+      }
+    },
+    {
+      "timestamp": "2026-08-22T10:28:50.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Spike traffic request 5",
+      "metadata": {
+        "spike": true,
+        "route": "/api/search"
+      }
+    },
+    {
+      "timestamp": "2026-08-22T10:28:50.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Spike traffic request 6",
+      "metadata": {
+        "spike": true,
+        "route": "/api/search"
+      }
+    },
+    {
+      "timestamp": "2026-08-22T10:36:05.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Request handled successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1086",
+        "durationMs": 54
+      }
+    },
+    {
+      "timestamp": "2026-08-22T10:39:05.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Service health check passed (auth-service)",
+      "metadata": {
+        "requestId": "req-1116",
+        "durationMs": 125
+      }
+    },
+    {
+      "timestamp": "2026-08-22T11:13:25.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "WARNING",
+      "source": "auth-service",
+      "message": "User authenticated successfully (auth-service)",
+      "metadata": {
+        "requestId": "req-1095",
+        "durationMs": 92
+      }
+    },
+    {
+      "timestamp": "2026-08-22T11:23:55.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "WARNING",
+      "source": "payment-service",
+      "message": "Cache entry found (payment-service)",
+      "metadata": {
+        "requestId": "req-1087",
+        "durationMs": 195
+      }
+    },
+    {
+      "timestamp": "2026-08-22T11:25:53.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "DEBUG",
+      "source": "api-service",
+      "message": "Payment captured successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1090",
+        "durationMs": 166
+      }
+    },
+    {
+      "timestamp": "2026-08-22T11:49:09.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Background job finished (payment-service)",
+      "metadata": {
+        "requestId": "req-1089",
+        "durationMs": 180
+      }
+    },
+    {
+      "timestamp": "2026-08-22T12:00:16.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Cache entry missing (worker-service)",
+      "metadata": {
+        "requestId": "req-1085",
+        "durationMs": 106
+      }
+    },
+    {
+      "timestamp": "2026-08-22T12:16:39.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "WARNING",
+      "source": "auth-service",
+      "message": "User session ended (auth-service)",
+      "metadata": {
+        "requestId": "req-1101",
+        "durationMs": 128
+      }
+    },
+    {
+      "timestamp": "2026-08-22T12:40:36.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Payment captured successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1098",
+        "durationMs": 179
+      }
+    },
+    {
+      "timestamp": "2026-08-22T13:05:04.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "WARNING",
+      "source": "cache-service",
+      "message": "Background job finished (cache-service)",
+      "metadata": {
+        "requestId": "req-1080",
+        "durationMs": 23
+      }
+    },
+    {
+      "timestamp": "2026-08-22T13:08:13.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Cache entry missing (api-service)",
+      "metadata": {
+        "requestId": "req-1119",
+        "durationMs": 105
+      }
+    },
+    {
+      "timestamp": "2026-08-22T13:08:25.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Background job finished (payment-service)",
+      "metadata": {
+        "requestId": "req-1109",
+        "durationMs": 181
+      }
+    },
+    {
+      "timestamp": "2026-08-22T13:24:45.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Payment captured successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1114",
+        "durationMs": 162
+      }
+    },
+    {
+      "timestamp": "2026-08-22T13:42:44.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Cache entry missing (api-service)",
+      "metadata": {
+        "requestId": "req-1104",
+        "durationMs": 117
+      }
+    },
+    {
+      "timestamp": "2026-08-22T13:48:24.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "User session ended (cache-service)",
+      "metadata": {
+        "requestId": "req-1091",
+        "durationMs": 51
+      }
+    },
+    {
+      "timestamp": "2026-08-22T14:05:07.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "WARNING",
+      "source": "cache-service",
+      "message": "Query executed (cache-service)",
+      "metadata": {
+        "requestId": "req-1118",
+        "durationMs": 84
+      }
+    },
+    {
+      "timestamp": "2026-08-22T14:08:02.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "DEBUG",
+      "source": "cache-service",
+      "message": "User authenticated successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1096",
+        "durationMs": 72
+      }
+    },
+    {
+      "timestamp": "2026-08-22T14:14:22.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Query executed (worker-service)",
+      "metadata": {
+        "requestId": "req-1105",
+        "durationMs": 175
+      }
+    },
+    {
+      "timestamp": "2026-08-22T14:39:56.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Background job finished (worker-service)",
+      "metadata": {
+        "requestId": "req-1117",
+        "durationMs": 188
+      }
+    },
+    {
+      "timestamp": "2026-08-22T14:51:34.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "DEBUG",
+      "source": "api-service",
+      "message": "Cache entry found (api-service)",
+      "metadata": {
+        "requestId": "req-1115",
+        "durationMs": 103
+      }
+    },
+    {
+      "timestamp": "2026-08-22T15:01:46.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "DEBUG",
+      "source": "worker-service",
+      "message": "User authenticated successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1106",
+        "durationMs": 52
+      }
+    },
+    {
+      "timestamp": "2026-08-22T15:02:32.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "DEBUG",
+      "source": "worker-service",
+      "message": "Service health check passed (worker-service)",
+      "metadata": {
+        "requestId": "req-1092",
+        "durationMs": 116
+      }
+    },
+    {
+      "timestamp": "2026-08-22T15:05:34.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "User session ended (payment-service)",
+      "metadata": {
+        "requestId": "req-1088",
+        "durationMs": 108
+      }
+    },
+    {
+      "timestamp": "2026-08-22T15:06:40.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Cache entry missing (worker-service)",
+      "metadata": {
+        "requestId": "req-1112",
+        "durationMs": 136
+      }
+    },
+    {
+      "timestamp": "2026-08-22T15:43:00.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "DEBUG",
+      "source": "payment-service",
+      "message": "Cache entry missing (payment-service)",
+      "metadata": {
+        "requestId": "req-1097",
+        "durationMs": 163
+      }
+    },
+    {
+      "timestamp": "2026-08-22T16:00:35.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Payment captured successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1107",
+        "durationMs": 16
+      }
+    },
+    {
+      "timestamp": "2026-08-22T16:01:19.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "WARNING",
+      "source": "payment-service",
+      "message": "Payment captured successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1083",
+        "durationMs": 130
+      }
+    },
+    {
+      "timestamp": "2026-08-22T16:10:14.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Query executed (auth-service)",
+      "metadata": {
+        "requestId": "req-1111",
+        "durationMs": 117
+      }
+    },
+    {
+      "timestamp": "2026-08-22T16:17:24.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "DEBUG",
+      "source": "payment-service",
+      "message": "Cache entry found (payment-service)",
+      "metadata": {
+        "requestId": "req-1081",
+        "durationMs": 158
+      }
+    },
+    {
+      "timestamp": "2026-08-22T16:19:05.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Cache entry missing (worker-service)",
+      "metadata": {
+        "requestId": "req-1094",
+        "durationMs": 95
+      }
+    },
+    {
+      "timestamp": "2026-08-22T16:51:02.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Cache entry found (cache-service)",
+      "metadata": {
+        "requestId": "req-1103",
+        "durationMs": 146
+      }
+    },
+    {
+      "timestamp": "2026-08-22T16:58:48.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "DEBUG",
+      "source": "payment-service",
+      "message": "Cache entry found (payment-service)",
+      "metadata": {
+        "requestId": "req-1099",
+        "durationMs": 84
+      }
+    },
+    {
+      "timestamp": "2026-08-23T02:15:00.000Z",
+      "event_type": "BACKGROUND_SYNC",
+      "severity": "WARNING",
+      "source": "worker-service",
+      "message": "Unexpected off-hours sync job executed",
+      "metadata": {
+        "offHours": true,
+        "jobId": "sync-1"
+      }
+    },
+    {
+      "timestamp": "2026-08-23T03:15:00.000Z",
+      "event_type": "BACKGROUND_SYNC",
+      "severity": "WARNING",
+      "source": "worker-service",
+      "message": "Unexpected off-hours sync job executed",
+      "metadata": {
+        "offHours": true,
+        "jobId": "sync-2"
+      }
+    },
+    {
+      "timestamp": "2026-08-23T04:15:00.000Z",
+      "event_type": "BACKGROUND_SYNC",
+      "severity": "WARNING",
+      "source": "worker-service",
+      "message": "Unexpected off-hours sync job executed",
+      "metadata": {
+        "offHours": true,
+        "jobId": "sync-3"
+      }
+    },
+    {
+      "timestamp": "2026-08-23T05:15:00.000Z",
+      "event_type": "BACKGROUND_SYNC",
+      "severity": "WARNING",
+      "source": "worker-service",
+      "message": "Unexpected off-hours sync job executed",
+      "metadata": {
+        "offHours": true,
+        "jobId": "sync-4"
+      }
+    },
+    {
+      "timestamp": "2026-08-23T06:15:00.000Z",
+      "event_type": "BACKGROUND_SYNC",
+      "severity": "WARNING",
+      "source": "worker-service",
+      "message": "Unexpected off-hours sync job executed",
+      "metadata": {
+        "offHours": true,
+        "jobId": "sync-5"
+      }
+    },
+    {
+      "timestamp": "2026-08-23T07:15:00.000Z",
+      "event_type": "BACKGROUND_SYNC",
+      "severity": "WARNING",
+      "source": "worker-service",
+      "message": "Unexpected off-hours sync job executed",
+      "metadata": {
+        "offHours": true,
+        "jobId": "sync-6"
+      }
+    },
+    {
+      "timestamp": "2026-08-23T09:30:45.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "User authenticated successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1045",
+        "durationMs": 28
+      }
+    },
+    {
+      "timestamp": "2026-08-23T09:32:42.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "WARNING",
+      "source": "api-service",
+      "message": "User session ended (api-service)",
+      "metadata": {
+        "requestId": "req-1044",
+        "durationMs": 123
+      }
+    },
+    {
+      "timestamp": "2026-08-23T10:18:46.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Background job finished (cache-service)",
+      "metadata": {
+        "requestId": "req-1051",
+        "durationMs": 159
+      }
+    },
+    {
+      "timestamp": "2026-08-23T11:06:14.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Request handled successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1071",
+        "durationMs": 145
+      }
+    },
+    {
+      "timestamp": "2026-08-23T11:28:39.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "User authenticated successfully (auth-service)",
+      "metadata": {
+        "requestId": "req-1064",
+        "durationMs": 104
+      }
+    },
+    {
+      "timestamp": "2026-08-23T12:01:09.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Request handled successfully (auth-service)",
+      "metadata": {
+        "requestId": "req-1052",
+        "durationMs": 19
+      }
+    },
+    {
+      "timestamp": "2026-08-23T12:04:43.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "WARNING",
+      "source": "cache-service",
+      "message": "Cache entry found (cache-service)",
+      "metadata": {
+        "requestId": "req-1048",
+        "durationMs": 146
+      }
+    },
+    {
+      "timestamp": "2026-08-23T12:11:23.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Request handled successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1065",
+        "durationMs": 182
+      }
+    },
+    {
+      "timestamp": "2026-08-23T12:14:24.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "DEBUG",
+      "source": "api-service",
+      "message": "Payment captured successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1041",
+        "durationMs": 80
+      }
+    },
+    {
+      "timestamp": "2026-08-23T12:17:21.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "WARNING",
+      "source": "payment-service",
+      "message": "User authenticated successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1050",
+        "durationMs": 191
+      }
+    },
+    {
+      "timestamp": "2026-08-23T12:32:14.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Cache entry found (auth-service)",
+      "metadata": {
+        "requestId": "req-1062",
+        "durationMs": 89
+      }
+    },
+    {
+      "timestamp": "2026-08-23T12:38:00.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Query executed (auth-service)",
+      "metadata": {
+        "requestId": "req-1058",
+        "durationMs": 127
+      }
+    },
+    {
+      "timestamp": "2026-08-23T12:40:23.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Query executed (worker-service)",
+      "metadata": {
+        "requestId": "req-1057",
+        "durationMs": 119
+      }
+    },
+    {
+      "timestamp": "2026-08-23T12:49:33.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "DEBUG",
+      "source": "worker-service",
+      "message": "Cache entry found (worker-service)",
+      "metadata": {
+        "requestId": "req-1056",
+        "durationMs": 204
+      }
+    },
+    {
+      "timestamp": "2026-08-23T13:12:56.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "WARNING",
+      "source": "cache-service",
+      "message": "User session ended (cache-service)",
+      "metadata": {
+        "requestId": "req-1076",
+        "durationMs": 19
+      }
+    },
+    {
+      "timestamp": "2026-08-23T13:19:29.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "User authenticated successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1054",
+        "durationMs": 153
+      }
+    },
+    {
+      "timestamp": "2026-08-23T13:35:11.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Cache entry missing (auth-service)",
+      "metadata": {
+        "requestId": "req-1074",
+        "durationMs": 36
+      }
+    },
+    {
+      "timestamp": "2026-08-23T13:53:12.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Background job finished (cache-service)",
+      "metadata": {
+        "requestId": "req-1070",
+        "durationMs": 86
+      }
+    },
+    {
+      "timestamp": "2026-08-23T14:04:13.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Cache entry missing (api-service)",
+      "metadata": {
+        "requestId": "req-1060",
+        "durationMs": 15
+      }
+    },
+    {
+      "timestamp": "2026-08-23T14:05:22.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "DEBUG",
+      "source": "payment-service",
+      "message": "Payment captured successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1049",
+        "durationMs": 207
+      }
+    },
+    {
+      "timestamp": "2026-08-23T14:15:42.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Query executed (api-service)",
+      "metadata": {
+        "requestId": "req-1047",
+        "durationMs": 110
+      }
+    },
+    {
+      "timestamp": "2026-08-23T14:25:56.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "WARNING",
+      "source": "auth-service",
+      "message": "Cache entry found (auth-service)",
+      "metadata": {
+        "requestId": "req-1067",
+        "durationMs": 66
+      }
+    },
+    {
+      "timestamp": "2026-08-23T14:38:22.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "User authenticated successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1040",
+        "durationMs": 190
+      }
+    },
+    {
+      "timestamp": "2026-08-23T14:41:00.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "WARNING",
+      "source": "payment-service",
+      "message": "Background job finished (payment-service)",
+      "metadata": {
+        "requestId": "req-1043",
+        "durationMs": 34
+      }
+    },
+    {
+      "timestamp": "2026-08-23T14:42:24.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "User session ended (api-service)",
+      "metadata": {
+        "requestId": "req-1042",
+        "durationMs": 115
+      }
+    },
+    {
+      "timestamp": "2026-08-23T14:46:27.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "WARNING",
+      "source": "cache-service",
+      "message": "Service health check passed (cache-service)",
+      "metadata": {
+        "requestId": "req-1077",
+        "durationMs": 23
+      }
+    },
+    {
+      "timestamp": "2026-08-23T14:54:03.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Payment captured successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1046",
+        "durationMs": 113
+      }
+    },
+    {
+      "timestamp": "2026-08-23T14:58:24.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Payment captured successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1078",
+        "durationMs": 147
+      }
+    },
+    {
+      "timestamp": "2026-08-23T15:00:08.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Cache entry missing (payment-service)",
+      "metadata": {
+        "requestId": "req-1075",
+        "durationMs": 174
+      }
+    },
+    {
+      "timestamp": "2026-08-23T15:04:02.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "DEBUG",
+      "source": "api-service",
+      "message": "User authenticated successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1061",
+        "durationMs": 177
+      }
+    },
+    {
+      "timestamp": "2026-08-23T15:26:43.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Payment captured successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1063",
+        "durationMs": 194
+      }
+    },
+    {
+      "timestamp": "2026-08-23T15:28:34.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Cache entry missing (api-service)",
+      "metadata": {
+        "requestId": "req-1059",
+        "durationMs": 55
+      }
+    },
+    {
+      "timestamp": "2026-08-23T15:32:11.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "WARNING",
+      "source": "auth-service",
+      "message": "Cache entry missing (auth-service)",
+      "metadata": {
+        "requestId": "req-1072",
+        "durationMs": 125
+      }
+    },
+    {
+      "timestamp": "2026-08-23T15:42:32.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Background job finished (api-service)",
+      "metadata": {
+        "requestId": "req-1066",
+        "durationMs": 137
+      }
+    },
+    {
+      "timestamp": "2026-08-23T15:46:32.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "WARNING",
+      "source": "auth-service",
+      "message": "User authenticated successfully (auth-service)",
+      "metadata": {
+        "requestId": "req-1068",
+        "durationMs": 34
+      }
+    },
+    {
+      "timestamp": "2026-08-23T15:57:51.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "DEBUG",
+      "source": "payment-service",
+      "message": "Service health check passed (payment-service)",
+      "metadata": {
+        "requestId": "req-1079",
+        "durationMs": 160
+      }
+    },
+    {
+      "timestamp": "2026-08-23T16:23:42.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "User authenticated successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1069",
+        "durationMs": 92
+      }
+    },
+    {
+      "timestamp": "2026-08-23T16:31:00.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Service health check passed (worker-service)",
+      "metadata": {
+        "requestId": "req-1055",
+        "durationMs": 44
+      }
+    },
+    {
+      "timestamp": "2026-08-23T16:33:07.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "WARNING",
+      "source": "auth-service",
+      "message": "Cache entry missing (auth-service)",
+      "metadata": {
+        "requestId": "req-1053",
+        "durationMs": 189
+      }
+    },
+    {
+      "timestamp": "2026-08-23T16:46:24.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "Cache entry missing (cache-service)",
+      "metadata": {
+        "requestId": "req-1073",
+        "durationMs": 69
+      }
+    },
+    {
+      "timestamp": "2026-08-24T09:35:38.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Cache entry missing (worker-service)",
+      "metadata": {
+        "requestId": "req-1020",
+        "durationMs": 187
+      }
+    },
+    {
+      "timestamp": "2026-08-24T09:45:19.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "DEBUG",
+      "source": "cache-service",
+      "message": "User authenticated successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1018",
+        "durationMs": 126
+      }
+    },
+    {
+      "timestamp": "2026-08-24T09:50:16.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Cache entry found (payment-service)",
+      "metadata": {
+        "requestId": "req-1024",
+        "durationMs": 160
+      }
+    },
+    {
+      "timestamp": "2026-08-24T09:53:27.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Cache entry missing (worker-service)",
+      "metadata": {
+        "requestId": "req-1016",
+        "durationMs": 162
+      }
+    },
+    {
+      "timestamp": "2026-08-24T10:05:37.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "DEBUG",
+      "source": "payment-service",
+      "message": "Query executed (payment-service)",
+      "metadata": {
+        "requestId": "req-1023",
+        "durationMs": 160
+      }
+    },
+    {
+      "timestamp": "2026-08-24T10:13:41.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Payment captured successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1001",
+        "durationMs": 69
+      }
+    },
+    {
+      "timestamp": "2026-08-24T10:15:36.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "WARNING",
+      "source": "worker-service",
+      "message": "User session ended (worker-service)",
+      "metadata": {
+        "requestId": "req-1007",
+        "durationMs": 39
+      }
+    },
+    {
+      "timestamp": "2026-08-24T10:16:23.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Cache entry found (api-service)",
+      "metadata": {
+        "requestId": "req-1029",
+        "durationMs": 21
+      }
+    },
+    {
+      "timestamp": "2026-08-24T10:38:29.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "DEBUG",
+      "source": "cache-service",
+      "message": "Cache entry missing (cache-service)",
+      "metadata": {
+        "requestId": "req-1014",
+        "durationMs": 86
+      }
+    },
+    {
+      "timestamp": "2026-08-24T11:13:42.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Payment captured successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1033",
+        "durationMs": 84
+      }
+    },
+    {
+      "timestamp": "2026-08-24T11:17:10.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Background job finished (worker-service)",
+      "metadata": {
+        "requestId": "req-1005",
+        "durationMs": 79
+      }
+    },
+    {
+      "timestamp": "2026-08-24T11:19:53.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "DEBUG",
+      "source": "cache-service",
+      "message": "Cache entry found (cache-service)",
+      "metadata": {
+        "requestId": "req-1038",
+        "durationMs": 51
+      }
+    },
+    {
+      "timestamp": "2026-08-24T11:33:20.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Query executed (payment-service)",
+      "metadata": {
+        "requestId": "req-1017",
+        "durationMs": 134
+      }
+    },
+    {
+      "timestamp": "2026-08-24T11:57:41.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "DEBUG",
+      "source": "worker-service",
+      "message": "Cache entry found (worker-service)",
+      "metadata": {
+        "requestId": "req-1028",
+        "durationMs": 92
+      }
+    },
+    {
+      "timestamp": "2026-08-24T12:05:45.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Service health check passed (api-service)",
+      "metadata": {
+        "requestId": "req-1003",
+        "durationMs": 182
+      }
+    },
+    {
+      "timestamp": "2026-08-24T12:11:11.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Service health check passed (payment-service)",
+      "metadata": {
+        "requestId": "req-1004",
+        "durationMs": 119
+      }
+    },
+    {
+      "timestamp": "2026-08-24T12:15:23.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Payment captured successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1035",
+        "durationMs": 45
+      }
+    },
+    {
+      "timestamp": "2026-08-24T12:46:06.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Cache entry found (worker-service)",
+      "metadata": {
+        "requestId": "req-1031",
+        "durationMs": 73
+      }
+    },
+    {
+      "timestamp": "2026-08-24T13:01:58.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "WARNING",
+      "source": "worker-service",
+      "message": "User session ended (worker-service)",
+      "metadata": {
+        "requestId": "req-1000",
+        "durationMs": 62
+      }
+    },
+    {
+      "timestamp": "2026-08-24T13:17:07.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Request handled successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1036",
+        "durationMs": 110
+      }
+    },
+    {
+      "timestamp": "2026-08-24T13:26:02.000Z",
+      "event_type": "JOB_COMPLETED",
+      "severity": "DEBUG",
+      "source": "cache-service",
+      "message": "Background job finished (cache-service)",
+      "metadata": {
+        "requestId": "req-1006",
+        "durationMs": 163
+      }
+    },
+    {
+      "timestamp": "2026-08-24T13:40:48.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "Request handled successfully (worker-service)",
+      "metadata": {
+        "requestId": "req-1027",
+        "durationMs": 40
+      }
+    },
+    {
+      "timestamp": "2026-08-24T13:51:57.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Cache entry found (auth-service)",
+      "metadata": {
+        "requestId": "req-1009",
+        "durationMs": 193
+      }
+    },
+    {
+      "timestamp": "2026-08-24T14:08:02.000Z",
+      "event_type": "CACHE_HIT",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Cache entry found (api-service)",
+      "metadata": {
+        "requestId": "req-1039",
+        "durationMs": 36
+      }
+    },
+    {
+      "timestamp": "2026-08-24T14:09:00.000Z",
+      "event_type": "HEALTH_CHECK",
+      "severity": "WARNING",
+      "source": "auth-service",
+      "message": "Service health check passed (auth-service)",
+      "metadata": {
+        "requestId": "req-1030",
+        "durationMs": 23
+      }
+    },
+    {
+      "timestamp": "2026-08-24T14:27:28.000Z",
+      "event_type": "CACHE_MISS",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Cache entry missing (api-service)",
+      "metadata": {
+        "requestId": "req-1015",
+        "durationMs": 94
+      }
+    },
+    {
+      "timestamp": "2026-08-24T14:28:32.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "WARNING",
+      "source": "payment-service",
+      "message": "Payment captured successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1026",
+        "durationMs": 167
+      }
+    },
+    {
+      "timestamp": "2026-08-24T14:38:28.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "WARNING",
+      "source": "api-service",
+      "message": "User session ended (api-service)",
+      "metadata": {
+        "requestId": "req-1019",
+        "durationMs": 132
+      }
+    },
+    {
+      "timestamp": "2026-08-24T14:48:58.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "User session ended (payment-service)",
+      "metadata": {
+        "requestId": "req-1008",
+        "durationMs": 37
+      }
+    },
+    {
+      "timestamp": "2026-08-24T15:07:35.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Payment captured successfully (payment-service)",
+      "metadata": {
+        "requestId": "req-1034",
+        "durationMs": 136
+      }
+    },
+    {
+      "timestamp": "2026-08-24T15:15:57.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "DEBUG",
+      "source": "cache-service",
+      "message": "Payment captured successfully (cache-service)",
+      "metadata": {
+        "requestId": "req-1010",
+        "durationMs": 135
+      }
+    },
+    {
+      "timestamp": "2026-08-24T15:16:25.000Z",
+      "event_type": "PAYMENT_PROCESSED",
+      "severity": "INFO",
+      "source": "auth-service",
+      "message": "Payment captured successfully (auth-service)",
+      "metadata": {
+        "requestId": "req-1021",
+        "durationMs": 27
+      }
+    },
+    {
+      "timestamp": "2026-08-24T15:38:18.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "INFO",
+      "source": "payment-service",
+      "message": "Query executed (payment-service)",
+      "metadata": {
+        "requestId": "req-1037",
+        "durationMs": 193
+      }
+    },
+    {
+      "timestamp": "2026-08-24T15:49:03.000Z",
+      "event_type": "DATABASE_QUERY",
+      "severity": "WARNING",
+      "source": "api-service",
+      "message": "Query executed (api-service)",
+      "metadata": {
+        "requestId": "req-1032",
+        "durationMs": 123
+      }
+    },
+    {
+      "timestamp": "2026-08-24T15:59:37.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "DEBUG",
+      "source": "auth-service",
+      "message": "User session ended (auth-service)",
+      "metadata": {
+        "requestId": "req-1013",
+        "durationMs": 85
+      }
+    },
+    {
+      "timestamp": "2026-08-24T16:10:34.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "worker-service",
+      "message": "User session ended (worker-service)",
+      "metadata": {
+        "requestId": "req-1002",
+        "durationMs": 139
+      }
+    },
+    {
+      "timestamp": "2026-08-24T16:11:30.000Z",
+      "event_type": "USER_LOGIN",
+      "severity": "WARNING",
+      "source": "api-service",
+      "message": "User authenticated successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1011",
+        "durationMs": 44
+      }
+    },
+    {
+      "timestamp": "2026-08-24T16:23:00.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "INFO",
+      "source": "cache-service",
+      "message": "User session ended (cache-service)",
+      "metadata": {
+        "requestId": "req-1012",
+        "durationMs": 127
+      }
+    },
+    {
+      "timestamp": "2026-08-24T16:24:07.000Z",
+      "event_type": "USER_LOGOUT",
+      "severity": "WARNING",
+      "source": "payment-service",
+      "message": "User session ended (payment-service)",
+      "metadata": {
+        "requestId": "req-1025",
+        "durationMs": 115
+      }
+    },
+    {
+      "timestamp": "2026-08-24T16:29:47.000Z",
+      "event_type": "API_REQUEST",
+      "severity": "WARNING",
+      "source": "api-service",
+      "message": "Request handled successfully (api-service)",
+      "metadata": {
+        "requestId": "req-1022",
+        "durationMs": 117
+      }
+    },
+    {
+      "event_type": "MISSING_TIMESTAMP",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Row missing timestamp"
+    },
+    {
+      "timestamp": "not-a-real-date",
+      "event_type": "BAD_TIMESTAMP",
+      "severity": "INFO",
+      "source": "api-service",
+      "message": "Row has malformed timestamp"
+    },
+    {
+      "timestamp": "2026-08-24T06:40:05.808Z",
+      "event_type": "BAD_SEVERITY",
+      "severity": "URGENT",
+      "source": "api-service",
+      "message": "Row has invalid severity"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "smart-log-analyzer",
+  "version": "1.0.0",
+  "description": "Smart Log Analyzer with anomaly detection and AI explanations",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"cyan,magenta\" \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "db:init": "cd backend && npm run db:init",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "start:backend": "cd backend && npm start",
+    "build:frontend": "cd frontend && npm run build",
+    "generate:data": "node scripts/generate-dataset.js",
+    "ingest:data": "cd backend && npm run ingest:dataset",
+    "prisma:generate": "cd backend && npm run prisma:generate",
+    "stream:demo": "node scripts/simulate-stream.js"
+  },
+  "keywords": [
+    "log-analyzer",
+    "anomaly-detection",
+    "ai",
+    "openai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}

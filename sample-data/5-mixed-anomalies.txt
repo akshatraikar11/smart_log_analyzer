@@ -1,0 +1,10 @@
+2024-08-24T10:00:00Z INFO User login successful
+2024-08-24T10:01:00Z ERROR Database connection failed
+2024-08-24T10:01:05Z ERROR Database connection failed
+2024-08-24T10:01:10Z CRITICAL Database pool exhausted
+2024-08-24T10:01:15Z CRITICAL Out of memory
+2024-08-24T10:02:00Z WARNING Disk space low
+2024-08-24T10:03:00Z ERROR Payment processing failed
+2024-08-24T10:04:00Z INFO API request processed
+2030-08-24T10:05:00Z CRITICAL Future timestamp anomaly - this log is from the future!
+2024-08-24T10:06:00Z INFO Normal operation resumed

@@ -1,0 +1,7 @@
+[
+  {"timestamp":"2024-08-24T10:00:00Z","event_type":"STARTUP","severity":"INFO","source":"payment-service","message":"Service started successfully"},
+  {"timestamp":"2024-08-24T10:01:00Z","event_type":"SLOW_QUERY","severity":"INFO","source":"payment-service","message":"Query took 800ms"},
+  {"timestamp":"2024-08-24T10:02:00Z","event_type":"CONNECTION_SLOW","severity":"WARNING","source":"payment-service","message":"Database connection latency increasing"},
+  {"timestamp":"2024-08-24T10:03:00Z","event_type":"TIMEOUT","severity":"ERROR","source":"payment-service","message":"Payment processing timeout"},
+  {"timestamp":"2024-08-24T10:04:00Z","event_type":"SERVICE_DOWN","severity":"CRITICAL","source":"payment-service","message":"Payment service unresponsive"}
+]

@@ -1,0 +1,8 @@
+timestamp,event_type,severity,source,message
+2026-08-24T12:00:01Z,USER_CHECKOUT,INFO,payment-gateway,Checkout session initiated for order #10492
+2026-08-24T12:00:03Z,TRANSACTION_BEGIN,INFO,payment-gateway,Transaction tx_9921 begun on postgres cluster
+2026-08-24T12:00:05Z,LOCK_ACQUIRE_TIMEOUT,WARNING,database-primary,Query waiting on RowExclusiveLock for over 5000ms
+2026-08-24T12:00:08Z,DATABASE_DEADLOCK,CRITICAL,payment-gateway,FATAL: deadlock detected on relation 'orders_pkey'. Process 4018 waits for ExclusiveLock on page 44; blocked by process 4019
+2026-08-24T12:00:10Z,TRANSACTION_ABORTED,ERROR,payment-gateway,Transaction tx_9921 aborted due to deadlock rollback
+2026-08-24T12:00:12Z,CONNECTION_POOL_EXHAUSTED,CRITICAL,api-gateway,All 50 postgres pool connections in use. New requests queueing
+2026-08-24T12:00:15Z,HTTP_500_BURST,ERROR,api-gateway,HTTP 500 returned to 45 clients requesting /api/checkout

@@ -1,0 +1,14 @@
+timestamp,event_type,severity,source,message
+2024-08-24T10:00:00Z,USER_LOGIN,INFO,auth-service,User alice@example.com logged in
+2024-08-24T10:01:00Z,USER_LOGIN,INFO,auth-service,User bob@example.com logged in
+2024-08-24T10:02:00Z,USER_LOGIN,INFO,auth-service,User charlie@example.com logged in
+2024-08-24T10:03:00Z,API_REQUEST,INFO,api-service,GET /api/users
+2024-08-24T10:04:00Z,API_REQUEST,INFO,api-service,GET /api/products
+2024-08-24T10:05:00Z,API_REQUEST,INFO,api-service,POST /api/orders
+2024-08-24T10:06:00Z,DATABASE_QUERY,INFO,api-service,SELECT query executed
+2024-08-24T10:07:00Z,DATABASE_QUERY,INFO,api-service,INSERT query executed
+2024-08-24T10:08:00Z,USER_LOGOUT,INFO,auth-service,User logged out
+2024-08-24T10:09:00Z,USER_LOGIN,INFO,auth-service,User dave@example.com logged in
+2024-08-24T10:10:00Z,NUCLEAR_REACTOR_MELTDOWN,CRITICAL,reactor-core,Core temperature exceeding safe limits
+2024-08-24T10:11:00Z,USER_LOGIN,INFO,auth-service,User eve@example.com logged in
+2024-08-24T10:12:00Z,API_REQUEST,INFO,api-service,GET /api/dashboard

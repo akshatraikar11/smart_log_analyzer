@@ -1,0 +1,8 @@
+timestamp,event_type,severity,source,message
+2026-08-24T12:10:00Z,USER_LOGIN_ATTEMPT,INFO,auth-service,Login attempt received for user admin from IP 198.51.100.22
+2026-08-24T12:10:02Z,AUTH_PASSWORD_FAILED,WARNING,auth-service,Invalid password for user admin from IP 198.51.100.22 (attempt 1)
+2026-08-24T12:10:03Z,AUTH_PASSWORD_FAILED,WARNING,auth-service,Invalid password for user admin from IP 198.51.100.22 (attempt 2)
+2026-08-24T12:10:04Z,AUTH_PASSWORD_FAILED,WARNING,auth-service,Invalid password for user admin from IP 198.51.100.22 (attempt 3)
+2026-08-24T12:10:05Z,AUTH_BURST_FAILURE,ERROR,auth-service,Rapid brute-force authentication burst detected from IP 198.51.100.22 (35 attempts/sec)
+2026-08-24T12:10:07Z,IP_RATE_LIMITED,WARNING,security-firewall,Temporary 15-minute rate limit applied to IP 198.51.100.22
+2026-08-24T12:10:10Z,CREDENTIAL_STUFFING_ALERT,CRITICAL,security-firewall,Credential stuffing attack signature identified across 12 distinct accounts

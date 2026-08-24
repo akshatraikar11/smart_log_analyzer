@@ -1,0 +1,30 @@
+[
+  {
+    "timestamp": "2026-08-24T12:50:00Z",
+    "event_type": "TLS_HANDSHAKE_SUCCESS",
+    "severity": "INFO",
+    "source": "edge-proxy",
+    "message": "TLSv1.3 connection established with cipher TLS_AES_256_GCM_SHA384"
+  },
+  {
+    "timestamp": "2026-08-24T12:50:05Z",
+    "event_type": "MALFORMED_HTTP_HEADER_EXPLOIT",
+    "severity": "WARNING",
+    "source": "edge-proxy",
+    "message": "HTTP request smuggling probe detected: duplicate Content-Length and Transfer-Encoding headers"
+  },
+  {
+    "timestamp": "2026-08-24T12:50:10Z",
+    "event_type": "KERNEL_NULL_POINTER_DEREFERENCE",
+    "severity": "CRITICAL",
+    "source": "kernel-syslog",
+    "message": "BUG: unable to handle kernel NULL pointer dereference at 0000000000000028 in tcp_v4_rcv+0x62/0xab0"
+  },
+  {
+    "timestamp": "2026-08-24T12:50:15Z",
+    "event_type": "SECURITY_RULE_ISOLATION_TRIGGER",
+    "severity": "CRITICAL",
+    "source": "host-defense-daemon",
+    "message": "Immediate network isolation engaged for compromised container ctn_99182a"
+  }
+]

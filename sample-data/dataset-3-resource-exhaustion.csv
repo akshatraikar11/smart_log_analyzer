@@ -1,0 +1,7 @@
+timestamp,event_type,severity,source,message
+2026-08-24T12:20:00Z,DISK_SPACE_CHECK,INFO,worker-node-1,Disk usage on /dev/sda1 at 78% capacity
+2026-08-24T12:20:15Z,BATCH_JOB_STARTED,INFO,worker-node-1,High-throughput batch image compression job #4492 started
+2026-08-24T12:20:30Z,DISK_HIGH_WATERMARK,WARNING,worker-node-1,Disk usage on /dev/sda1 exceeded warning watermark: 92% capacity
+2026-08-24T12:20:45Z,DISK_FULL_EMERGENCY,CRITICAL,worker-node-1,No space left on device (/dev/sda1 at 99.9%). I/O operations suspended
+2026-08-24T12:20:50Z,PROCESS_KILLED_OOM,CRITICAL,worker-node-1,Worker child process 8192 killed by OS Out-Of-Memory (OOM) killer
+2026-08-24T12:20:55Z,NODE_UNRESPONSIVE,CRITICAL,orchestrator,Heartbeat lost for worker-node-1 after 30 seconds
