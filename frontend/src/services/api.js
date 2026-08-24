@@ -5,7 +5,10 @@
 import axios from 'axios';
 
 const normalizeUrl = (url) => {
-    if (!url) {
+    if (typeof window !== 'undefined' && window.location.hostname.includes('onrender.com')) {
+        return 'https://smart-log-analyzer-backend.onrender.com/api';
+    }
+    if (!url || url.includes('smart-log-analyzer-backend:')) {
         return typeof window !== 'undefined' && window.location.hostname === 'localhost'
             ? 'http://localhost:3000/api'
             : 'https://smart-log-analyzer-backend.onrender.com/api';

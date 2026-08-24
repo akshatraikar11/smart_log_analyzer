@@ -80,7 +80,7 @@ function App() {
         <div className="topbar-right">
           <QuickIngest onSuccess={handleRefresh} />
           <LiveIndicator connected={connected} />
-          <span className="topbar-meta">detect · groq explain · :5173</span>
+          <span className="topbar-meta">detect · groq explain</span>
         </div>
       </div>
 
