@@ -111,6 +111,27 @@ app.use((err, req, res, next) => {
     });
 });
 
+// Auto-initialize database schema if tables are missing
+async function autoInitSchemaIfNeeded() {
+    try {
+        const checkRes = await db.query(
+            "SELECT EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'logs');"
+        );
+        if (!checkRes.rows[0].exists) {
+            console.log('📦 Database tables not found. Initializing schema automatically...');
+            const fs = require('fs');
+            const schemaPath = path.resolve(__dirname, '../database/schema.sql');
+            if (fs.existsSync(schemaPath)) {
+                const schemaSql = fs.readFileSync(schemaPath, 'utf8');
+                await db.query(schemaSql);
+                console.log('✅ Database schema auto-initialized successfully with sample data!');
+            }
+        }
+    } catch (err) {
+        console.warn('⚠️ Auto-init schema check notice:', err.message);
+    }
+}
+
 // Start server
 async function startServer() {
     try {
@@ -120,6 +141,9 @@ async function startServer() {
             console.error('❌ Failed to connect to database. Please check your DATABASE_URL');
             process.exit(1);
         }
+
+        // Auto-create tables & sample data if needed
+        await autoInitSchemaIfNeeded();
 
         // Attach Socket.IO to the HTTP server
         socketManager.init(httpServer);
