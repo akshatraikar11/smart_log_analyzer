@@ -45,5 +45,4 @@ services:
 databases:
   - name: smart-log-db
     databaseName: log_analyzer
-    user: postgres
     plan: free
