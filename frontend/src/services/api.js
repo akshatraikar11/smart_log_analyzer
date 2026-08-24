@@ -2,9 +2,18 @@
  * API Client for Smart Log Analyzer
  */
 
-import axios from 'axios';
+function getApiBaseUrl() {
+    let url = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
+    if (!url.startsWith('http://') && !url.startsWith('https://')) {
+        url = `https://${url}`;
+    }
+    if (!url.endsWith('/api')) {
+        url = url.replace(/\/+$/, '') + '/api';
+    }
+    return url;
+}
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
+const API_BASE_URL = getApiBaseUrl();
 
 const api = axios.create({
     baseURL: API_BASE_URL,

@@ -12,9 +12,15 @@
 import { useEffect, useRef, useState, useCallback } from 'react'
 import { io } from 'socket.io-client'
 
-const WS_URL = import.meta.env.VITE_API_URL
-  ? import.meta.env.VITE_API_URL.replace('/api', '')
-  : 'http://localhost:3000'
+function getWsUrl() {
+  let url = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+  if (!url.startsWith('http://') && !url.startsWith('https://')) {
+    url = `https://${url}`;
+  }
+  return url.replace(/\/api\/?$/, '');
+}
+
+const WS_URL = getWsUrl();
 
 const TOAST_LIFETIME_MS = 8000
 const MAX_TOASTS = 5
