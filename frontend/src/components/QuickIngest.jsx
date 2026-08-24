@@ -1,11 +1,70 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { logsAPI } from '../services/api'
+
+const SOURCES = ['auth-service', 'payment-gateway', 'order-processor', 'inventory-db', 'api-gateway', 'worker-service']
+const NORMAL_EVENTS = ['USER_LOGIN', 'ORDER_CREATED', 'PAYMENT_PROCESSED', 'TOKEN_REFRESHED', 'CACHE_HIT', 'DATABASE_QUERY']
+const ANOMALIES = [
+  { event_type: 'DATABASE_DEADLOCK', severity: 'CRITICAL', source: 'payment-gateway', message: 'Fatal: deadlock detected on relation "orders_pkey" during checkout' },
+  { event_type: 'HTTP_500_BURST', severity: 'ERROR', source: 'api-gateway', message: 'HTTP 500 returned to 45 clients requesting /api/checkout' },
+  { event_type: 'CONNECTION_POOL_EXHAUSTED', severity: 'CRITICAL', source: 'api-gateway', message: 'All 500 postgres pool connections in use. New requests queueing' },
+  { event_type: 'MEMORY_LIMIT_EXCEEDED', severity: 'CRITICAL', source: 'order-processor', message: 'Heap out of memory: heap used 1.8GB / limit 2.0GB' },
+  { event_type: 'AUTH_BURST_FAILURE', severity: 'ERROR', source: 'auth-service', message: 'Multiple failed password attempts for user admin from IP 198.51.100.42' }
+]
 
 function QuickIngest({ onSuccess }) {
   const [showModal, setShowModal] = useState(false)
   const [selectedFile, setSelectedFile] = useState(null)
   const [loading, setLoading] = useState(false)
   const [statusMsg, setStatusMsg] = useState(null)
+  const [isStreaming, setIsStreaming] = useState(false)
+  const streamTimerRef = useRef(null)
+  const countRef = useRef(0)
+
+  // Cleanup stream on unmount
+  useEffect(() => {
+    return () => {
+      if (streamTimerRef.current) clearInterval(streamTimerRef.current)
+    }
+  }, [])
+
+  const toggleStream = () => {
+    if (isStreaming) {
+      clearInterval(streamTimerRef.current)
+      streamTimerRef.current = null
+      setIsStreaming(false)
+    } else {
+      setIsStreaming(true)
+      streamTimerRef.current = setInterval(async () => {
+        countRef.current += 1
+        const isAnomaly = countRef.current % 4 === 0
+        let log
+        if (isAnomaly) {
+          const sample = ANOMALIES[Math.floor(Math.random() * ANOMALIES.length)]
+          log = {
+            timestamp: new Date().toISOString(),
+            ...sample
+          }
+        } else {
+          const evt = NORMAL_EVENTS[Math.floor(Math.random() * NORMAL_EVENTS.length)]
+          const src = SOURCES[Math.floor(Math.random() * SOURCES.length)]
+          const sev = Math.random() > 0.8 ? 'WARNING' : 'INFO'
+          log = {
+            timestamp: new Date().toISOString(),
+            event_type: evt,
+            severity: sev,
+            source: src,
+            message: `Normal operational event: ${evt} completed successfully in 32ms`
+          }
+        }
+
+        try {
+          await logsAPI.ingestLogs(log)
+        } catch (e) {
+          console.warn('Stream ingestion error:', e.message)
+        }
+      }, 2200)
+    }
+  }
 
   const handleFileUpload = async (e) => {
     e.preventDefault()
@@ -21,7 +80,6 @@ function QuickIngest({ onSuccess }) {
       const flagged = res.detection?.flagged || res.flaggedCount || 0
       setStatusMsg(`✅ Uploaded! Ingested ${count} logs, Flagged ${flagged} anomalies.`)
       
-      // Wait a moment to show success message, then close and refresh
       setTimeout(() => {
         setShowModal(false)
         setStatusMsg(null)
@@ -37,6 +95,26 @@ function QuickIngest({ onSuccess }) {
 
   return (
     <>
+      <button 
+        onClick={toggleStream}
+        style={{ 
+          fontSize: '12px', 
+          padding: '4px 10px', 
+          fontFamily: 'var(--font-mono)',
+          textTransform: 'uppercase',
+          letterSpacing: '0.05em',
+          background: isStreaming ? '#c23b22' : '#1f6b63',
+          color: '#fff',
+          border: 'none',
+          cursor: 'pointer',
+          borderRadius: '2px',
+          boxShadow: isStreaming ? '0 0 10px rgba(194, 59, 34, 0.6)' : 'none',
+          transition: 'all 0.2s ease'
+        }}
+      >
+        {isStreaming ? '⏹ Stop Stream' : '⚡ Simulate Stream'}
+      </button>
+
       <button 
         className="primary"
         onClick={() => setShowModal(true)}

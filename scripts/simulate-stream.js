@@ -7,9 +7,16 @@
  */
 
 const http = require('http');
+const https = require('https');
 
-const API_HOST = 'localhost';
-const API_PORT = 3000;
+const targetArg = process.argv[2] || process.env.API_URL || 'https://smart-log-analyzer-backend.onrender.com';
+const parsedUrl = new URL(targetArg.startsWith('http') ? targetArg : `http://${targetArg}`);
+const isHttps = parsedUrl.protocol === 'https:';
+const client = isHttps ? https : http;
+
+const API_HOST = parsedUrl.hostname;
+const API_PORT = parsedUrl.port || (isHttps ? 443 : 80);
+const API_PATH = parsedUrl.pathname.replace(/\/+$/, '') + '/api/logs/ingest';
 
 const SOURCES = ['auth-service', 'payment-gateway', 'order-processor', 'inventory-db', 'api-gateway', 'email-worker'];
 const NORMAL_EVENTS = ['USER_LOGIN', 'ORDER_CREATED', 'PAYMENT_PROCESSED', 'TOKEN_REFRESHED', 'CACHE_HIT', 'HEARTBEAT'];
@@ -48,11 +55,11 @@ function getRandomItem(arr) {
 function sendLog(logData) {
     const payload = JSON.stringify(logData);
 
-    const req = http.request(
+    const req = client.request(
         {
             hostname: API_HOST,
             port: API_PORT,
-            path: '/api/logs/ingest',
+            path: API_PATH.startsWith('/api') ? API_PATH : `/api${API_PATH}`,
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
